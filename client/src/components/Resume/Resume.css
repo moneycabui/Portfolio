@@ -1,0 +1,96 @@
+.resumeWrapper {
+  display: grid;
+  grid-template-columns: 100px auto;
+  column-gap: 30px;
+  margin: 20px;
+  justify-content: center;
+  justify-items: center;
+  font-size: 11px;
+}
+
+.title {
+  position: relative;
+  font-size: 75px;
+  font-family: Garamond;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  height: 55%;
+  margin: 0;
+}
+
+.paper {
+  /* Paper ratio should be 17:22 (w:h) */
+  height: 880px;
+  width: 680px;
+  padding: 50px;
+  box-shadow: 2px 2px 5px 0px #C7C7C7;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.name {
+  position: relative;
+  height: 75px;
+  margin: 0;
+  border-bottom: solid #E0E0E0 1px;
+  font-size: 50px;
+}
+
+.contact {
+  position: relative;
+  text-align: right;
+  height: 75px;
+  margin: 0;
+  border-bottom: solid #E0E0E0 1px;
+}
+
+.columnOne,
+.columnTwo {
+  margin-top: 7px;
+}
+
+.columnOne {
+  border-right: solid #E0E0E0 1px;
+  padding-right: 10px;
+}
+
+.columnTwo {
+  margin-left: 10px;
+}
+
+h1 {
+  font-family: Garamond;
+  font-size: 42px;
+  font-weight: 500;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  color: #9080be;
+  margin: 15px 0;
+}
+
+h3 {
+  color: black;
+  margin: 15px 0 5px 0;
+}
+
+.projectName {
+  font-weight: 700;
+  color: #9080be;
+  margin: 5px 0;
+}
+
+.projectGroupName {
+  font-style: italic;
+  margin: 5px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.workYear {
+  margin: 0;
+}

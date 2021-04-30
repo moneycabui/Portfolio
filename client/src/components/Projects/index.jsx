@@ -3,7 +3,9 @@ import styles from './Projects.css';
 
 const Projects = (props) => {
   return (
-    <div>Projects go here</div>
+    <div className={styles.projects}>
+      Projects
+    </div>
   );
 }
 

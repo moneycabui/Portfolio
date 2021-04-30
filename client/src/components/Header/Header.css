@@ -11,6 +11,7 @@
   z-index: 15;
   align-content: center;
   /* border: solid black; */
+  box-shadow: 2px 2px 7px 2px #EDEDED;
 }
 
 .header:hover,

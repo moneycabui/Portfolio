@@ -3,7 +3,9 @@ import styles from './TechSkills.css';
 
 const TechSkills = (props) => {
   return (
-    <div>Tech Skills go here</div>
+    <div className={styles.techSkills}>
+      Tech Skills
+    </div>
   );
 }
 

@@ -3,7 +3,9 @@ import styles from './Education.css';
 
 const Education = (props) => {
   return (
-    <div>Education go here</div>
+    <div className={styles.education}>
+      Education
+    </div>
   );
 }
 
