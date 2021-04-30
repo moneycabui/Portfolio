@@ -14,7 +14,7 @@ button {
 }
 
 .profileWrapper {
-  margin: 25px 10% auto auto;
+  margin: 50px 10% 50px auto;
   display: grid;
   grid-template-columns: 100px auto;
   column-gap: 100px;
@@ -26,6 +26,7 @@ button {
   border-radius: 50px;
   width: 100px;
   height: 100px;
+  box-shadow: 2px 2px 5px 1px #8F8F8F;
 }
 
 .hi {
