@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Header';
 import Introduction from '../Introduction';
+import AboutMe from '../AboutMe';
 import styles from './App.css';
 import {
   BrowserRouter as Router,
@@ -16,13 +17,24 @@ class App extends React.Component {
     };
   }
 
-
   render() {
     return (
       <Router>
         <div className={styles.app}>
           <Header />
-          <Introduction />
+          <Switch>
+            {/* <Route path="/">
+              <Introduction />
+            </Route>
+            <Route path="/AboutMe">
+              <AboutMe />
+            </Route> */}
+
+            <Route path="/" component={Introduction} exact />
+            <Route path="/AboutMe" component={AboutMe} exact/>
+
+            <Route path="*" render={() => (<div>No Route</div>)} />
+          </Switch>
         </div>
       </Router>
     )

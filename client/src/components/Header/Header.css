@@ -4,11 +4,18 @@
   position: sticky;
   top: 0px;
   height: 65px;
-  grid-template-columns: 275px auto 500px;
+  /* grid-template-columns: 275px auto 500px; */
+  grid-template-columns: 100px auto 500px;
   background-color: white;
   opacity: 0.975;
   z-index: 15;
   align-content: center;
+  /* border: solid black; */
+}
+
+.header:hover,
+.header:focus {
+  box-shadow: 2px 2px 7px 2px #BFBFBF;
 }
 
 .name {
@@ -20,13 +27,33 @@
   color: #0F3F8F;
   padding: 0px 20px;
   text-decoration: none;
-  border:none;
+  border: none;
   height: 50px;
   width: 200px;
   justify-self: start;
   align-content: center;
   align-self: center;
   cursor: pointer;
+}
+
+.headerImage {
+  position: relative;
+  margin: auto 20px;
+  top: 25px;
+  border: none;
+  border-radius: 50%;
+  justify-self: start;
+  align-content: center;
+  align-self: center;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  box-shadow: 2px 2px 5px 1px #BFBFBF;
+}
+
+.headerImage:hover,
+.headerImage:focus {
+  box-shadow: 2px 2px 5px 1px #8F8F8F;
 }
 
 .links {
@@ -90,6 +117,7 @@
   cursor: pointer;
   height: 50px;
   border-bottom: white solid 5px;
+  font-size: 30px;
 }
 
 .emailIcon:hover,
@@ -132,23 +160,128 @@
   color: #4267B2;
 }
 
-/* When screen is less than 1270 - remove links and add verticle links*/
-@media screen and (max-width: 1270px) {
-  .links,
+@media screen and (max-width: 1120px) {
   .header {
     display: none;
   }
 
   .header {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
   }
 }
 
-/* When screen is less than 540 - remove name */
-@media screen and (max-width: 540px) {
-  .name,
-  .header {
+@media screen and (max-width: 920px) {
+  .aboutMeLink,
+  .projectsLink,
+  .techSkillsLink,
+  .educationLink,
+  .resumeLink {
+    font-size: 12px;
+  }
+
+  .emailIcon,
+  .liIcon,
+  .ghIcon,
+  .igIcon,
+  .fbIcon {
+    font-size: 25px;
+  }
+
+  .socialMedia {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .aboutMeLink,
+  .projectsLink,
+  .techSkillsLink,
+  .educationLink,
+  .resumeLink {
+    padding: 10px 5px;
+    margin: 30px 5px;
+  }
+
+  .emailIcon,
+  .liIcon,
+  .ghIcon,
+  .igIcon,
+  .fbIcon {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .aboutMeLink,
+  .projectsLink,
+  .techSkillsLink,
+  .educationLink,
+  .resumeLink {
+    font-size: 10px;
+    padding: 10px 3px;
+    margin: 30px 3px;
+  }
+
+  .emailIcon,
+  .liIcon,
+  .ghIcon,
+  .igIcon,
+  .fbIcon {
+    padding: auto 5px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .emailIcon,
+  .liIcon,
+  .ghIcon,
+  .igIcon,
+  .fbIcon {
+    padding: auto 2px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .aboutMeLink {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .techSkillsLink {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .educationLink {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .projectsLink {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .resumeLink {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .headerImage {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 230px) {
+  .header,
+  .links,
+  .socialMedia {
     display: none;
   }
 
@@ -157,20 +290,15 @@
     grid-template-columns: auto;
   }
 
-  .socialMedia {
-    justify-content: space-between;
-  }
-}
-
-/* When screen is less than 270 - have name only */
-@media screen and (max-width: 270px) {
-  .socialMedia {
-    display: none;
-  }
-
-  .name {
+  .headerImage {
+    top: 0px;
+    left: calc(50% - 50px);
     display: flex;
     position: relative;
     justify-content: space-between;
+  }
+
+  .socialMedia {
+    display: none;
   }
 }
