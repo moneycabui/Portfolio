@@ -1,0 +1,49 @@
+.intro {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 150px 30px 20px 30px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.name,
+p,
+button {
+  padding: 0;
+  position: relative;
+}
+
+.profileWrapper {
+  margin: 25px 10% auto auto;
+  display: grid;
+  grid-template-columns: 100px auto;
+  column-gap: 100px;
+  justify-items: stretch;
+}
+
+.profilePhoto {
+  position: relative;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+.hi {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  justify-self: start;
+  margin-left: 20%;
+  font-size: 35px;
+  font-family: Garamond;
+}
+
+.name {
+  justify-self: center;
+  align-self: center;
+}
+
+.contactButton {
+  margin: 50px 30px 0 0;
+  justify-self: end;
+}

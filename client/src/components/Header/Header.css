@@ -1,0 +1,176 @@
+.header {
+  margin: 0px;
+  display: grid;
+  position: sticky;
+  top: 0px;
+  height: 65px;
+  grid-template-columns: 275px auto 500px;
+  background-color: white;
+  opacity: 0.975;
+  z-index: 15;
+  align-content: center;
+}
+
+.name {
+  position: relative;
+  font-family: Dancing Script;
+  font-size: 50px;
+  font-weight: 700;
+  top: 30px;
+  color: #0F3F8F;
+  padding: 0px 20px;
+  text-decoration: none;
+  border:none;
+  height: 50px;
+  width: 200px;
+  justify-self: start;
+  align-content: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  height: 100px;
+}
+
+.aboutMeLink,
+.projectsLink,
+.techSkillsLink,
+.educationLink,
+.resumeLink {
+  /* Font height (20) + top/bottom margin + top/bottom padding = total height (100)*/
+  padding: 10px 15px;
+  margin: 30px 10px;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-decoration: none;
+  color: #575757;
+  border:none;
+  justify-self: start;
+  align-content: center;
+  align-self: center;
+  cursor: pointer;
+  font-size: 15px;
+  outline: none;
+  background: none;
+  font-weight: 500;
+  border-bottom: solid 3px white;
+}
+
+.aboutMeLink:hover,
+.projectsLink:hover,
+.techSkillsLink:hover,
+.educationLink:hover,
+.resumeLink:hover {
+  border-bottom: solid 3px;
+}
+
+.socialMedia {
+  display: flex;
+  position: relative;
+  top: 25px;
+  margin: 0 20px;
+  align-content: center;
+  justify-content: flex-end;
+  height: 100px;
+}
+
+.emailIcon,
+.liIcon,
+.ghIcon,
+.igIcon,
+.fbIcon {
+  padding: 0 10px;
+  color: #0F3F8F;
+  /* color: #7A7A7A; */
+  /* color: #9080be; */
+  cursor: pointer;
+  height: 50px;
+  border-bottom: white solid 5px;
+}
+
+.emailIcon:hover,
+.emailIcon:focus,
+.liIcon:hover,
+.liIcon:focus,
+.ghIcon:hover,
+.ghIcon:focus,
+.igIcon:hover,
+.igIcon:focus,
+.fbIcon:hover,
+.fbIcon:focus {
+  border-bottom: solid 5px;
+  /* border-bottom: solid 5px #7A7A7A; */
+}
+
+.emailIcon:hover,
+.emailIcon:focus {
+  color: #BB001B;
+}
+
+.liIcon:hover,
+.liIcon:focus {
+  color: #0077b5;
+  /* color: #0F3F8F; */
+}
+
+.ghIcon:hover,
+.ghIcon:focus {
+  color: #211F1F;
+}
+
+.igIcon:hover,
+.igIcon:focus {
+  color: #bc2a8d;
+}
+
+.fbIcon:hover,
+.fbIcon:focus {
+  color: #4267B2;
+}
+
+/* When screen is less than 1270 - remove links and add verticle links*/
+@media screen and (max-width: 1270px) {
+  .links,
+  .header {
+    display: none;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+/* When screen is less than 540 - remove name */
+@media screen and (max-width: 540px) {
+  .name,
+  .header {
+    display: none;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .socialMedia {
+    justify-content: space-between;
+  }
+}
+
+/* When screen is less than 270 - have name only */
+@media screen and (max-width: 270px) {
+  .socialMedia {
+    display: none;
+  }
+
+  .name {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  }
+}
