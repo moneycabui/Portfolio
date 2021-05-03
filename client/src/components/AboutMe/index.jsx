@@ -14,11 +14,6 @@ const AboutMe = (props) => {
       <p>Formerly, I was an ABA Certificated Paralegal working in the Emerging Companies, Debt Financing, and Corporate Law fields.</p>
       <p>Presently volunteering as a Crisis Counselor at Crisis Text Line.</p>
       <p>Some of my interests include tennis, backpacking, running (I&apos;ve ran two half marathons), photograhy, and art.</p>
-      <br/>
-      <div>Contact:</div>
-      <div onClick={() => window.open('https://www.linkedin.com/in/monicabui/')}>LinkedIn - monicabui</div>
-      <div onClick={() => window.open('mailto:monicabbui@gmail.com')}>monicabbui@gmail.com</div>
-      <div onClick={() => window.open('https://github.com/moneycabui')}>GitHub - @moneycabui</div>
       <button className={styles.contactButton} onClick={() => window.open('mailto:monicabbui@gmail.com')}>Email Me</button>
     </div>
   );

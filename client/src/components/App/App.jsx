@@ -3,8 +3,8 @@ import Header from '../Header';
 import Introduction from '../Introduction';
 import AboutMe from '../AboutMe';
 import Projects from '../Projects';
-import TechSkills from '../TechSkills';
-import Education from '../Education';
+import Contact from '../Contact';
+import Home from '../Home';
 import Resume from '../Resume';
 import styles from './App.css';
 import {
@@ -28,10 +28,10 @@ class App extends React.Component {
           <Header />
           <Switch>
             <Route path="/" component={Introduction} exact />
+            <Route path="/" component={Home} exact/>
             <Route path="/AboutMe" component={AboutMe} exact/>
             <Route path="/Projects" component={Projects} exact/>
-            <Route path="/TechSkills" component={TechSkills} exact/>
-            <Route path="/Education" component={Education} exact/>
+            <Route path="/Contact" component={Contact} exact/>
             <Route path="/Resume" component={Resume} exact/>
             <Route path="*" render={() => (<div>No Route</div>)} />
           </Switch>

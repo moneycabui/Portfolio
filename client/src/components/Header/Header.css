@@ -111,8 +111,6 @@
 .fbIcon {
   padding: 0 10px;
   color: #0F3F8F;
-  /* color: #7A7A7A; */
-  /* color: #9080be; */
   cursor: pointer;
   height: 50px;
   border-bottom: white solid 5px;
@@ -130,7 +128,6 @@
 .fbIcon:hover,
 .fbIcon:focus {
   border-bottom: solid 5px;
-  /* border-bottom: solid 5px #7A7A7A; */
 }
 
 .emailIcon:hover,
@@ -141,7 +138,6 @@
 .liIcon:hover,
 .liIcon:focus {
   color: #0077b5;
-  /* color: #0F3F8F; */
 }
 
 .ghIcon:hover,

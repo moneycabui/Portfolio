@@ -1,0 +1,60 @@
+.contact {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 50px 30px 20px 30px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.contactTitle {
+  position: relative;
+  /* justify-self: end; */
+  margin: 30px;
+  margin-bottom: 100px;
+}
+
+.iconWrapper {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.liIcon,
+.emailIcon,
+.igIcon,
+.fbIcon,
+.ghIcon {
+  font-size: 80px;
+  margin: auto 35px;
+  cursor: pointer;
+}
+
+.liIcon {
+  color: #0077b5;
+}
+
+.emailIcon {
+  color: #BB001B;
+}
+
+.igIcon {
+  color: #bc2a8d;
+}
+
+.fbIcon {
+  color: #4267B2;
+}
+
+.ghIcon {
+  color: #211F1F;
+}
+
+.liIcon:hover,
+.emailIcon:hover,
+.igIcon:hover,
+.fbIcon:hover,
+.ghIcon:hover {
+  opacity: 0.7;
+  transition: 500ms;
+}
