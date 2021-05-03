@@ -14,8 +14,9 @@
   font-family: Garamond;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  height: 55%;
+  text-align: center;
   margin: 0;
+  box-shadow: 2px 2px 7px 2px #EDEDED;
 }
 
 .paper {
@@ -23,7 +24,8 @@
   height: 880px;
   width: 680px;
   padding: 50px;
-  box-shadow: 2px 2px 5px 0px #C7C7C7;
+  /* box-shadow: 2px 2px 5px 0px #C7C7C7; */
+  box-shadow: 2px 2px 7px 2px #EDEDED;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }

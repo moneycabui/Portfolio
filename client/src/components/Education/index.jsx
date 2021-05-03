@@ -4,7 +4,8 @@ import styles from './Education.css';
 const Education = (props) => {
   return (
     <div className={styles.education}>
-      Education
+      Education<br/>
+      Page currently under construction.
     </div>
   );
 }

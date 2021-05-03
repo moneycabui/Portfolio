@@ -4,13 +4,11 @@
   position: sticky;
   top: 0px;
   height: 65px;
-  /* grid-template-columns: 275px auto 500px; */
   grid-template-columns: 100px auto 500px;
   background-color: white;
   opacity: 0.975;
   z-index: 15;
   align-content: center;
-  /* border: solid black; */
   box-shadow: 2px 2px 7px 2px #EDEDED;
 }
 
@@ -64,11 +62,11 @@
   height: 100px;
 }
 
+.homeLink,
 .aboutMeLink,
 .projectsLink,
-.techSkillsLink,
-.educationLink,
-.resumeLink {
+.resumeLink,
+.contactLink {
   /* Font height (20) + top/bottom margin + top/bottom padding = total height (100)*/
   padding: 10px 15px;
   margin: 30px 10px;
@@ -88,11 +86,11 @@
   border-bottom: solid 3px white;
 }
 
+.homeLink:hover,
 .aboutMeLink:hover,
 .projectsLink:hover,
-.techSkillsLink:hover,
-.educationLink:hover,
-.resumeLink:hover {
+.resumeLink:hover,
+.contactLink:hover {
   border-bottom: solid 3px;
 }
 
@@ -173,11 +171,11 @@
 }
 
 @media screen and (max-width: 920px) {
+  .homeLink,
   .aboutMeLink,
   .projectsLink,
-  .techSkillsLink,
-  .educationLink,
-  .resumeLink {
+  .resumeLink,
+  .contactLink {
     font-size: 12px;
   }
 
@@ -195,11 +193,11 @@
 }
 
 @media screen and (max-width: 850px) {
+  .homeLink,
   .aboutMeLink,
   .projectsLink,
-  .techSkillsLink,
-  .educationLink,
-  .resumeLink {
+  .resumeLink,
+  .contactLink {
     padding: 10px 5px;
     margin: 30px 5px;
   }
@@ -214,11 +212,11 @@
 }
 
 @media screen and (max-width: 695px) {
+  .homeLink,
   .aboutMeLink,
   .projectsLink,
-  .techSkillsLink,
-  .educationLink,
-  .resumeLink {
+  .resumeLink,
+  .contactLink {
     font-size: 10px;
     padding: 10px 3px;
     margin: 30px 3px;
@@ -250,13 +248,13 @@
 }
 
 @media screen and (max-width: 520px) {
-  .techSkillsLink {
+  .homeLink {
     display: none;
   }
 }
 
 @media screen and (max-width: 490px) {
-  .educationLink {
+  .contactLink {
     display: none;
   }
 }

@@ -11,6 +11,7 @@ const Resume = (props) => {
         </div>
         <div className={styles.contact}>
           <small>
+            {/* Make on clicks that take you to links */}
             San Francisco, CA<br/>
             408-966-2658<br/>
             monicabbui@gmail.com<br/>
@@ -20,6 +21,7 @@ const Resume = (props) => {
         </div>
         <div className={styles.columnOne}>
           <h2>Software Engineering Applications</h2>
+          {/* Make on clicks that take you to links */}
           <h3>Product Manager and Software Programmer</h3>
           <span className={styles.projectName}>Stitch Saver | </span>
           <span className={styles.projectGroupName}>Crafty Caribbean</span>
@@ -70,6 +72,7 @@ const Resume = (props) => {
           <p>JavaScript • Node.js • Express • ES6 •  NPM • AWS • EC2 • S3 • Nginx • Git Workflow • Debugging • Databases • SQL and NoSQL • MySQL • MongoDB • Webpack • Babel • jQuery • Programming • Trello • ServiceNow • VSC • Loader.io • K6 • Agile Methodology • TDD • CircleCI • Data Structures • Project Management • System Design and Integration • Technical Documentation and Research • APIs</p>
 
           <h2>Prior Professional Experience</h2>
+          {/* Make on clicks that take you to links */}
           <h3>Latham &#038; Watkins LLP</h3>
           <p className={styles.workCity}>San Francisco, CA</p>
           <p className={styles.workYear}>2019 - 2021</p>

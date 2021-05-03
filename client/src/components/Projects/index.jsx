@@ -4,7 +4,8 @@ import styles from './Projects.css';
 const Projects = (props) => {
   return (
     <div className={styles.projects}>
-      Projects
+      Projects<br/>
+      Page currently under construction.
     </div>
   );
 }

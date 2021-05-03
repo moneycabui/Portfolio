@@ -4,7 +4,8 @@ import styles from './TechSkills.css';
 const TechSkills = (props) => {
   return (
     <div className={styles.techSkills}>
-      Tech Skills
+      Tech Skills<br/>
+      Page currently under construction.
     </div>
   );
 }

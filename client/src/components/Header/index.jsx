@@ -20,11 +20,13 @@ class Header extends React.Component {
           <img className={styles.headerImage} src="/images/ProfilePhoto.jpg" alt="Monica Bui" />
         </Link>
         <div className={styles.links}>
+          <Link to="/" className={styles.homeLink}>Home</Link>
           <Link to="/AboutMe" className={styles.aboutMeLink}>About Me</Link>
           <Link to="/Projects" className={styles.projectsLink}>Projects</Link>
-          <Link to="/TechSkills" className={styles.techSkillsLink}>Tech Skills</Link>
-          <Link to="/Education" className={styles.educationLink}>Education</Link>
+          {/* <Link to="/TechSkills" className={styles.techSkillsLink}>Tech Skills</Link>
+          <Link to="/Education" className={styles.educationLink}>Education</Link> */}
           <Link to="/Resume" className={styles.resumeLink}>Resume</Link>
+          <Link to="/Contact" className={styles.contactLink}>Contact</Link>
         </div>
         <div className={styles.socialMedia}>
           <FaLinkedinIn onClick={() => window.open('https://www.linkedin.com/in/monicabui/')} className={styles.liIcon} />
