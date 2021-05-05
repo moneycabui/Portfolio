@@ -49,6 +49,8 @@ class Contact extends React.Component {
     console.log('Sent: ', this.state);
     this.setState({
       nameInput: '',
+      titleInput: '',
+      companyInput: '',
       emailInput: '',
       phoneInput: '',
       subjectInput: '',
@@ -60,6 +62,8 @@ class Contact extends React.Component {
   render() {
     const {
       nameInput,
+      titleInput,
+      companyInput,
       emailInput,
       phoneInput,
       subjectInput,
@@ -113,6 +117,30 @@ class Contact extends React.Component {
               minLength="5"
               maxLength="100"
             />
+            <div className={styles.companyContainer}>
+              <div>
+                <label htmlFor="titleInput" className={styles.titleInputText}>Title</label>
+                <input
+                  placeholder="Hiring Manager"
+                  name="titleInput"
+                  value={titleInput}
+                  onChange={this.handleChange}
+                  className={styles.titleInput}
+                  maxLength="100"
+                />
+              </div>
+              <div>
+                <label htmlFor="companyInput" className={styles.companyInputText}>Company</label>
+                <input
+                  placeholder="Name of Company"
+                  name="companyInput"
+                  value={companyInput}
+                  onChange={this.handleChange}
+                  className={styles.companyInput}
+                  maxLength="150"
+                />
+              </div>
+            </div>
             <label htmlFor="emailInput" className={styles.inputText}>Email*</label>
             <input
               placeholder="abc@123.com"

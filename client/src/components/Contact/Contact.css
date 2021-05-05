@@ -18,7 +18,7 @@
   position: relative;
   justify-content: space-between;
   align-content: center;
-  width: 30%;
+  width: 25%;
 }
 
 .liIcon,
@@ -27,7 +27,7 @@
 .fbIcon,
 .ghIcon {
   position: relative;
-  font-size: 70px;
+  font-size: 50px;
   cursor: pointer;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .emailImage {
-  width: 45%;
+  width: 300px;
   justify-self: end;
   align-self: start;
   margin-top: 35px
@@ -90,6 +90,8 @@
 }
 
 .nameInput,
+.titleInput,
+.companyInput,
 .emailInput,
 .phoneInput,
 .subjectInput,
@@ -105,6 +107,26 @@
   width: 100%;
 }
 
+.companyContainer {
+  display: grid;
+  position: relative;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  column-gap: 25px;
+}
+
+.titleInput,
+.companyInput {
+  position: relative;
+  width: calc(100% - 25px);
+}
+
+.titleInputText,
+.companyInputText {
+  justify-self: center;
+  margin-left: 15px;
+}
+
 .phoneInput,
 .messageInput {
   margin-bottom: 0px;
@@ -114,7 +136,9 @@
   border-radius: 10px;
 }
 
-.inputText {
+.inputText,
+.titleInputText,
+.companyInputText {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   justify-self: start;
@@ -155,6 +179,7 @@
   outline: none;
   border: none;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .submitMessageButton {
@@ -181,4 +206,164 @@
   box-shadow: 2px 2px 7px 1px #EBEBEB;
   color: black;
   transition: 500ms;
+}
+
+@media screen and (max-width: 1350px) {
+  .iconWrapper {
+    width: 30%;
+  }
+
+  .messageForm {
+    width: 60%;
+  }
+
+  .messageContainer {
+    column-gap: 90px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .iconWrapper {
+    width: 35%;
+  }
+
+  .messageForm {
+    width: 75%;
+  }
+
+  .messageContainer {
+    column-gap: 80px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .iconWrapper {
+    width: 40%;
+  }
+
+  .messageForm {
+    width: 85%;
+  }
+
+  .messageContainer {
+    column-gap: 70px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .characterCount,
+  .note {
+    font-size: 9px;
+  }
+
+  .messageContainer {
+    column-gap: 60px;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .iconWrapper {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .iconWrapper {
+    width: 50%;
+  }
+
+  .characterCount,
+  .note {
+    font-size: 8px;
+  }
+
+  .messageForm {
+    width: 85%;
+  }
+
+  .messageContainer {
+    column-gap: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .messageContainer {
+    column-gap: 35px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .characterCount,
+  .note {
+    font-size: 7px;
+  }
+
+  .messageContainer {
+    column-gap: 25px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .iconWrapper {
+    width: 65%;
+  }
+
+  .messageContainer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .emailImage,
+  .messageForm {
+    justify-self: center;
+  }
+
+  .characterCount,
+  .note {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .iconWrapper {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .iconWrapper {
+    width: 85%;
+  }
+
+  .characterCount,
+  .note {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .iconWrapper {
+    width: 95%;
+  }
+  .characterCount,
+  .note {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .liIcon,
+  .emailIcon,
+  .igIcon,
+  .fbIcon,
+  .ghIcon {
+    font-size: 35px
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .characterCount,
+  .note {
+    font-size: 7px;
+  }
 }

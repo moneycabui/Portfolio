@@ -9,12 +9,12 @@
   opacity: 0.975;
   z-index: 15;
   align-content: center;
-  box-shadow: 2px 2px 7px 2px #EDEDED;
+  box-shadow: -0.5px 2px 7px 2px #EDEDED;
 }
 
 .header:hover,
 .header:focus {
-  box-shadow: 2px 2px 7px 2px #BFBFBF;
+  box-shadow: -10px 2px 7px 2px #BFBFBF;
 }
 
 .name {
@@ -162,7 +162,7 @@
 
   .header {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 100px auto auto;
   }
 }
 
@@ -270,6 +270,10 @@
 @media screen and (max-width: 325px) {
   .headerImage {
     display: none;
+  }
+
+  .socialMedia {
+    justify-self: center;
   }
 }
 
