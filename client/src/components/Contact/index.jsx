@@ -13,6 +13,7 @@ class Contact extends React.Component {
       subjectInput: '',
       messageInput: '',
       charCount: 0,
+      sentStatus: 'default',
     };
     this.handleChange = this.handleChange.bind(this);
     this.handlePhoneInput = this.handlePhoneInput.bind(this);
@@ -56,6 +57,7 @@ class Contact extends React.Component {
       subjectInput: '',
       messageInput: '',
       charCount: 0,
+      sentStatus: 'sent',
     });
   }
 
@@ -69,7 +71,16 @@ class Contact extends React.Component {
       subjectInput,
       messageInput,
       charCount,
+      sentStatus,
     } = this.state;
+
+    let sentNotificationRender = <small className={styles.defaultNotification}>Send a message</small>;
+    if (sentStatus === 'sent') {
+      sentNotificationRender = <small className={styles.sentNotification}>Message sent!</small>;
+    }
+    if (sentStatus === 'failed') {
+      sentNotificationRender = <small className={styles.failedNotification}>Message failed to send</small>;
+    }
 
     return (
       <div className={styles.contact}>
@@ -106,6 +117,7 @@ class Contact extends React.Component {
         <div className={styles.messageContainer}>
           <img className={styles.emailImage} src="/images/EmailIcon.jpeg" alt="Message Icon" />
           <form className={styles.messageForm} onSubmit={this.handleMessageSend}>
+            {sentNotificationRender}
             <label htmlFor="nameInput" className={styles.inputText}>First and Last Name*</label>
             <input
               placeholder="First Last"
@@ -121,7 +133,7 @@ class Contact extends React.Component {
               <div>
                 <label htmlFor="titleInput" className={styles.titleInputText}>Title</label>
                 <input
-                  placeholder="Hiring Manager"
+                  placeholder="CEO"
                   name="titleInput"
                   value={titleInput}
                   onChange={this.handleChange}
@@ -180,7 +192,8 @@ class Contact extends React.Component {
               name="messageInput"
               value={messageInput}
               onChange={this.handleMessageInput}
-              className={styles.messageInput}              minLength="10"
+              className={styles.messageInput}
+              minLength="10"
               required
             />
             <div className={styles.notesWrapper}>

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './AboutMe.css';
+import { Link } from 'react-router-dom';
 
 const AboutMe = (props) => {
   return (
@@ -14,7 +15,9 @@ const AboutMe = (props) => {
       <p>Formerly, I was an ABA Certificated Paralegal working in the Emerging Companies, Debt Financing, and Corporate Law fields.</p>
       <p>Presently volunteering as a Crisis Counselor at Crisis Text Line.</p>
       <p>Some of my interests include tennis, backpacking, running (I&apos;ve ran two half marathons), photograhy, and art.</p>
-      <button className={styles.contactButton} onClick={() => window.open('mailto:monicabbui@gmail.com')}>Email Me</button>
+      <Link to="/Contact" className={styles.contactLink}>
+        <button className={styles.contactButton}>Contact Me</button>
+      </Link>
     </div>
   );
 }

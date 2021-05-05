@@ -3,6 +3,7 @@
   grid-template-columns: 100px auto;
   column-gap: 30px;
   margin: 20px;
+  margin-top: 100px;
   justify-content: center;
   justify-items: center;
   font-size: 11px;

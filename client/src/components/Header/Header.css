@@ -1,7 +1,9 @@
 .header {
   margin: 0px;
   display: grid;
-  position: sticky;
+  /* position: sticky; */
+  width: calc(100% + 1px);
+  position: fixed;
   top: 0px;
   height: 65px;
   grid-template-columns: 100px auto 500px;
@@ -250,13 +252,13 @@
 }
 
 @media screen and (max-width: 490px) {
-  .contactLink {
+  .projectsLink {
     display: none;
   }
 }
 
 @media screen and (max-width: 430px) {
-  .projectsLink {
+  .contactLink {
     display: none;
   }
 }
@@ -268,11 +270,22 @@
 }
 
 @media screen and (max-width: 325px) {
+  .header {
+    display: none;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: auto auto 100%;
+  }
+
   .headerImage {
     display: none;
   }
 
   .socialMedia {
+    width: 100%;
+    position: relative;
     justify-self: center;
   }
 }

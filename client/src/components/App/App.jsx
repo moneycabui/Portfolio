@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Header';
+import Footer from '../Footer';
 import AboutMe from '../AboutMe';
 import Projects from '../Projects';
 import Contact from '../Contact';
@@ -33,6 +34,7 @@ class App extends React.Component {
             <Route path="/Resume" component={Resume} exact/>
             <Route path="*" render={() => (<div>No Route</div>)} />
           </Switch>
+          <Footer />
         </div>
       </Router>
     )
