@@ -26,46 +26,46 @@ const Resume = (props) => {
           <span className={styles.projectName}>Stitch Saver | </span>
           <span className={styles.projectGroupName}>Crafty Caribbean</span>
           <ul>
-            <li>Led a team of seven software engineers to create an application designed for discovering and tracking artistic projects</li>
-            <li>Constructed the header component - comprised of the search bar, search suggestions, and navigation subcomponents using JavaScript, React, CSS Modules, Node Express, and Postgres</li>
+            <li className={styles.technicalBullets}>Led a team of seven software engineers to create an application designed for discovering and tracking artistic projects</li>
+            <li className={styles.technicalBullets}>Constructed the header component - comprised of the search bar, search suggestions, and navigation subcomponents using JavaScript, React, CSS Modules, Node Express, and Postgres</li>
           </ul>
 
           <h3>Back End Engineer</h3>
           <span className={styles.projectName}>Atelier System Design | </span>
           <span className={styles.projectGroupName}>Charismatic Cedar</span>
           <ul>
-            <li>Collaborated in an engineering team of three to construct server and database architecture utilizing Node.js and Express frameworks</li>
-            <li>Redesigned database schemas and horizontally scaled services to improve performance capable of handling 2000 requests per second - performance tested using Loader.io and K6</li>
-            <li>Deployed microservice with Docker to AWS EC2</li>
-            <li>Implemented NGINX load balancer to route traffic volume</li>
+            <li className={styles.technicalBullets}>Collaborated in an engineering team of three to construct server and database architecture utilizing Node.js and Express frameworks</li>
+            <li className={styles.technicalBullets}>Redesigned database schemas and horizontally scaled services to improve performance capable of handling 2000 requests per second - performance tested using Loader.io and K6</li>
+            <li className={styles.technicalBullets}>Deployed microservice with Docker to AWS EC2</li>
+            <li className={styles.technicalBullets}>Implemented NGINX load balancer to route traffic volume</li>
           </ul>
 
           <h3>Full Stack Developer</h3>
           <span className={styles.projectName}>Magic Meme | </span>
           <span className={styles.projectGroupName}>Personal Project</span>
           <ul>
-            <li>Engineered a full stack application to MVP in two days mimicking the novelty fortune-telling magic eight ball that was inspired by flip-a-coin moments</li>
-            <li>Requested and served gifs from the Giphy API to answer yes or no questions, retrieved gifs curated from keyword searches, and rendered trending memes</li>
+            <li className={styles.technicalBullets}>Engineered a full stack application to MVP in two days mimicking the novelty fortune-telling magic eight ball that was inspired by flip-a-coin moments</li>
+            <li className={styles.technicalBullets}>Requested and served gifs from the Giphy API to answer yes or no questions, retrieved gifs curated from keyword searches, and rendered trending memes</li>
           </ul>
 
           <h3>Frontend Engineer</h3>
           <span className={styles.projectName}>Atelier Retail Portal | </span>
           <span className={styles.projectGroupName}>Oscillating Owls</span>
           <ul>
-            <li>Contributed in a team of four programmers with a concerted effort to construct front-end components of a retail service site</li>
-            <li>Leveraged state-based components to render mathematical statistics regarding product characteristics, reviews, and ratings</li>
-            <li>Personalized and integrated custom star icons, gradient buttons with hover transitions, and styled inputs for a more aesthetic design</li>
+            <li className={styles.technicalBullets}>Contributed in a team of four programmers with a concerted effort to construct front-end components of a retail service site</li>
+            <li className={styles.technicalBullets}>Leveraged state-based components to render mathematical statistics regarding product characteristics, reviews, and ratings</li>
+            <li className={styles.technicalBullets}>Personalized and integrated custom star icons, gradient buttons with hover transitions, and styled inputs for a more aesthetic design</li>
           </ul>
 
           <h2>Education</h2>
-          <h3>Hack Reactor, San Francisco</h3>
-          <h4>Advanced Software Engineering Immersive • Graduated April 2021</h4>
+          <h3 className={styles.schools}>Hack Reactor, San Francisco</h3>
+          <h4 className={styles.educationDetails}>Advanced Software Engineering Immersive • Graduated April 2021</h4>
 
-          <h3>University of California, Irvine</h3>
-          <h4>Paralegal Certificate • Graduated September 2018</h4>
+          <h3 className={styles.schools}>University of California, Irvine</h3>
+          <h4 className={styles.educationDetails}>Paralegal Certificate • Graduated September 2018</h4>
 
-          <h3>University of California, Santa Barbara</h3>
-          <h4>Bachelor of Arts • Graduated June 2015</h4>
+          <h3 className={styles.schools}>University of California, Santa Barbara</h3>
+          <h4 className={styles.educationDetails}>Bachelor of Arts • Graduated June 2015</h4>
         </div>
         <div className={styles.columnTwo}>
           <h2>Technical Knowledge</h2>

@@ -1,14 +1,14 @@
 .intro {
   display: grid;
   grid-template-columns: auto;
-  margin: 150px 30px 20px 30px;
+  margin: 75px 30px 20px 30px;
   justify-content: center;
   justify-items: center;
 }
 
 .name,
 p,
-button {
+.contactButton {
   padding: 7px;
   position: relative;
 }
@@ -49,4 +49,20 @@ button {
 .contactButton {
   margin: 50px 30px 0 0;
   justify-self: end;
+  padding: 10px 30px;
+  justify-content: center;
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  border: none;
+  background: linear-gradient(to right, #ddd6f3 0%, #faaca8  51%, #ddd6f3 100%);
+  /* background: linear-gradient(to right, #F5268E, #F53C8E, #F5508E, #F5628E, #F5738E, #F57D8E, #F58A8E, #F58A8E, #F5958E); */
+  background-size: 200%;
+  transition: 500ms;
+  border-radius: 5px;
+  box-shadow: 2px 2px 7px 2px #BFBFBF;
 }

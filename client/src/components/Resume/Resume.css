@@ -8,6 +8,10 @@
   font-size: 11px;
 }
 
+p {
+  padding: 0;
+}
+
 .title {
   position: relative;
   font-size: 75px;
@@ -24,18 +28,18 @@
   height: 880px;
   width: 680px;
   padding: 50px;
-  /* box-shadow: 2px 2px 5px 0px #C7C7C7; */
   box-shadow: 2px 2px 7px 2px #EDEDED;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 2fr;
 }
 
 .name {
   position: relative;
-  height: 75px;
   margin: 0;
+  padding-bottom: 7px;
   border-bottom: solid #E0E0E0 1px;
   font-size: 50px;
+  align-self: end;
 }
 
 .contact {
@@ -48,16 +52,16 @@
 
 .columnOne,
 .columnTwo {
-  margin-top: 7px;
+  margin-top: 20px;
 }
 
 .columnOne {
   border-right: solid #E0E0E0 1px;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .columnTwo {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 h1 {
@@ -69,8 +73,8 @@ h1 {
 
 h2 {
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  color: #9080be;
-  margin: 15px 0;
+  color: #1c1c1f;
+  margin: 0;
 }
 
 h3 {
@@ -89,12 +93,25 @@ h3 {
   margin: 5px 0;
 }
 
-p {
-  margin: 0;
-  padding: 0;
+.technicalBullets {
+  padding: 3px;
 }
 
 .workCity,
 .workYear {
+  margin: 0;
+  padding: 3px;
+}
+
+.workCity {
+  font-style: italic;
+}
+
+.schools {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.educationDetails {
   margin: 0;
 }
