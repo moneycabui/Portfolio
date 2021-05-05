@@ -50,9 +50,12 @@ li {
 .contact {
   position: relative;
   text-align: right;
-  height: 75px;
+  align-self: end;
   margin: 0;
+  padding-bottom: 7px;
   border-bottom: solid #E0E0E0 1px;
+  font-size: 10px;
+  align-self: end;
 }
 
 .columnOne,

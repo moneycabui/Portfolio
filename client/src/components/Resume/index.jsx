@@ -10,14 +10,13 @@ const Resume = (props) => {
           <h1>Monica Bui</h1>
         </div>
         <div className={styles.contact}>
-          <small>
+          <div>
             {/* Make on clicks that take you to links */}
-            San Francisco, CA<br/>
-            408-966-2658<br/>
-            monicabbui@gmail.com<br/>
-            linkedin.com/in/monicabui<br/>
-            github.com/moneycabui<br/>
-          </small>
+            <div>San Francisco, CA</div>
+            <div>monicabbui@gmail.com</div>
+            <div>linkedin.com/in/monicabui</div>
+            <div>github.com/moneycabui</div>
+          </div>
         </div>
         <div className={styles.columnOne}>
           <h2>Software Engineering Applications</h2>
