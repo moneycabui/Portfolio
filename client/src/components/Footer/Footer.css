@@ -27,6 +27,7 @@
   padding: 5px;
   color: #ABABAB;
   cursor: pointer;
+  transition: 350ms;
 }
 
 .liIcon {
