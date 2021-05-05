@@ -68,39 +68,39 @@ const Resume = (props) => {
           <h4 className={styles.educationDetails}>Bachelor of Arts • Graduated June 2015</h4>
         </div>
         <div className={styles.columnTwo}>
-          <h2>Technical Knowledge</h2>
-          <p>JavaScript • Node.js • Express • ES6 •  NPM • AWS • EC2 • S3 • Nginx • Git Workflow • Debugging • Databases • SQL and NoSQL • MySQL • MongoDB • Webpack • Babel • jQuery • Programming • Trello • ServiceNow • VSC • Loader.io • K6 • Agile Methodology • TDD • CircleCI • Data Structures • Project Management • System Design and Integration • Technical Documentation and Research • APIs</p>
+          <h2 className={styles.techKnowledgeTitle}>Technical Knowledge</h2>
+          <p className={styles.techKnowledge}>JavaScript • Node.js • Express • ES6 •  NPM • AWS • EC2 • S3 • Nginx • Git Workflow • Debugging • Databases • SQL and NoSQL • MySQL • MongoDB • Webpack • Babel • jQuery • Programming • Trello • ServiceNow • VSC • Loader.io • K6 • Agile Methodology • TDD • CircleCI • Data Structures • Project Management • System Design and Integration • Technical Documentation and Research • APIs</p>
 
-          <h2>Prior Professional Experience</h2>
+          <h2 className={styles.priorExperienceHeader}>Prior Professional Experience</h2>
           {/* Make on clicks that take you to links */}
           <h3>Latham &#038; Watkins LLP</h3>
           <p className={styles.workCity}>San Francisco, CA</p>
           <p className={styles.workYear}>2019 - 2021</p>
-          <p>Pros Assistant | Notary | Emerging Companies | Corporate Law</p>
+          <p className={styles.workDetails}>Pros Assistant | Notary | Emerging Companies | Corporate Law</p>
 
           <h3>Stradling Yocca Carlson &#038; Rauth, PC</h3>
           <p className={styles.workCity}>Santa Monica, CA</p>
           <p className={styles.workYear}>2017 - 2019</p>
-          <p>Corporate Assistant | Bond and Public Law, Corporate Law, Litigation, IP</p>
+          <p className={styles.workDetails}>Corporate Assistant | Bond and Public Law, Corporate Law, Litigation, IP</p>
 
           <h3>Liem H. Do &#038; Associates, APLC</h3>
           <p className={styles.workCity}>Orange County, CA</p>
           <p className={styles.workYear}>2015 - 2017</p>
-          <p>Personal Injury | Estate Planning | Family Law</p>
+          <p className={styles.workDetails}>Personal Injury | Estate Planning | Family Law</p>
 
-          <h2>Involvements and Other Skills</h2>
+          <h2 className={styles.involvementsHeader}>Involvements and Other Skills</h2>
           <ul>
-            <li>Bilingual</li>
-            <li>Crisis Counselor for Crisis Text Line</li>
-            <li>Leadership experience through Rotary Youth Leadership Awards Program</li>
-            <li>Lead the UCI/OCPA Student Liaison team while attending UCI</li>
-            <li>Licensed Notary Public</li>
-            <li>CPR/AED Certified</li>
-            <li>Interests: </li>
+            <li className={styles.skills}>Bilingual</li>
+            <li className={styles.skills}>Crisis Counselor for Crisis Text Line</li>
+            <li className={styles.skills}>Leadership experience through Rotary Youth Leadership Awards Program</li>
+            <li className={styles.skills}>Lead the UCI/OCPA Student Liaison team while attending UCI</li>
+            <li className={styles.skills}>Licensed Notary Public</li>
+            <li className={styles.skills}>CPR/AED Certified</li>
+            <li className={styles.skills}>Interests: </li>
             <ul type="cicle">
-              <li>Ran two half marathons</li>
-              <li>Backpacking</li>
-              <li>Photography and painting</li>
+              <li className={styles.skills}>Ran two half marathons</li>
+              <li className={styles.skills}>Backpacking</li>
+              <li className={styles.skills}>Photography and painting</li>
             </ul>
           </ul>
         </div>

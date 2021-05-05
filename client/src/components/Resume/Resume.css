@@ -7,10 +7,14 @@
   justify-content: center;
   justify-items: center;
   font-size: 11px;
+  color: #666666;
 }
 
-p {
+p,
+li {
+  margin: 0;
   padding: 0;
+  color: #666666;
 }
 
 .title {
@@ -62,7 +66,7 @@ p {
 }
 
 .columnTwo {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 h1 {
@@ -74,8 +78,14 @@ h1 {
 
 h2 {
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  color: #1c1c1f;
+  color: #9080be;
   margin: 0;
+  font-size: 15px;
+}
+
+.priorExperienceHeader,
+.involvementsHeader {
+  margin-top: 40px;
 }
 
 h3 {
@@ -96,16 +106,22 @@ h3 {
 
 .technicalBullets {
   padding: 3px;
+  color: #666666;
 }
 
 .workCity,
 .workYear {
   margin: 0;
-  padding: 3px;
+  color: #666666;
+  font-size: 12px;
 }
 
 .workCity {
   font-style: italic;
+}
+
+.workDetails {
+  margin-bottom: 30px;
 }
 
 .schools {
@@ -115,4 +131,16 @@ h3 {
 
 .educationDetails {
   margin: 0;
+  font-weight: 500;
+  font-style: italic;
+  color: #666666;
+}
+
+.techKnowledgeTitle {
+  margin-bottom: 15px;
+}
+
+.techKnowledge,
+.skills {
+  font-size: 11.5px;
 }
