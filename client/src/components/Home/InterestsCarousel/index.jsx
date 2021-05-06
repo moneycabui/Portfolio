@@ -7,16 +7,8 @@ class InterestsCarousel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      leftArrowHover: false,
-      rightArrowHover: false,
-    };
-    this.toggleBackground = this.toggleBackground.bind(this);
-  }
 
-  toggleBackground(direction) {
-    const { increaseOpacity } = this.state;
-    console.log('Toggle')
-    this.setState({ increaseOpacity: !increaseOpacity })
+    };
   }
 
   // <div className={`image ${styles.imageA} `} style={{ width: `${cardWidth}`, gridRowEnd: `span ${gridSpan}` }}
@@ -24,28 +16,27 @@ class InterestsCarousel extends React.Component {
 
   render () {
     const imagesRender = images.map((image, index) => (
-      <div className={styles.imageContainer} key={index + image[1]}>
-        <img className={styles.image} src={image[0]} alt={image[1]} />
-      </div>
+      <img
+        className={styles.image}
+        src={image[0]}
+        alt={image[1]}
+        key={index + image[1]}
+      />
     ))
 
     return (
       <div className={styles.carousel}>
-        {imagesRender}
-        <div className={styles.arrows}>
-          <IoIosArrowBack
-            className={styles.previousButton}
-            onMouseEnter={() => this.toggleBackground('left')}
-            onMouseLeave={() => this.toggleBackground('left')}
-            size="40"
-            />
-          <IoIosArrowForward
-            className={styles.nextButton}
-            onMouseEnter={() => this.toggleBackground('right')}
-            onMouseLeave={() => this.toggleBackground('right')}
-            size="40"
-          />
+        <IoIosArrowBack
+          className={styles.previousButton}
+          size="40"
+        />
+        <div className={styles.imageContainer}>
+          {imagesRender}
         </div>
+        <IoIosArrowForward
+          className={styles.nextButton}
+          size="40"
+        />
       </div>
     );
   }

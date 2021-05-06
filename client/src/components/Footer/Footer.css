@@ -18,6 +18,10 @@
   text-decoration: none;
 }
 
+.link:hover {
+  color: black;
+}
+
 .emailIcon,
 .liIcon,
 .ghIcon,

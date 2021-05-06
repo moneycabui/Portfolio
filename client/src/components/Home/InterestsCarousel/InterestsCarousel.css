@@ -1,78 +1,64 @@
 .carousel {
   margin: 0 0;
   padding: 0 0;
-  display: flex;
-  position: relative;
-  width: 80%;
-  overflow-x: scroll;
-  /* overflow-x: hidden; */
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-}
-
-.wrapper {
-
-}
-
-.imageContainer {
-  /* position: relative; */
-  height: 500px;
-  display: flex;
-}
-
-.image {
-  position: relative;
-  margin: 0 5px;
-  border-radius: 7px;
-  height: 500px;
-}
-
-.image:hover {
-  transition: transform 500ms ease;
-  opacity: 0.7;
-  transform: scale(1.02, 1.02);
-  overflow: hidden;
-}
-
-.arrows {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  /* color: #66FCF1; */
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  width: 90%;
+  border-radius: 10px;
 }
 
 .previousButton,
 .nextButton {
-  position: relative;
-  cursor: pointer;
-  background-color: rgb(201, 201, 201, 0.5);
-  font-size: 30px;
-  border: none;
-  outline: none;
   color: white;
-  height: 500px;
-  opacity: 0.7;
+  position: relative;
+  opacity: 0.5;
+  height: 490px;
+  width: 50px;
+  background-color: rgb(201, 201, 201, 0.5);
+  z-index: 10;
+  border: 5px solid transparent;
 }
 
 .previousButton {
-  /* border-radius: 7px 0 0 7px; */
+  left: 50px;
+  border-radius: 10px 0 0 10px;
 }
 
 .nextButton {
-  /* border-radius: 0 7px 7px 0; */
+  right: 50px;
+  border-radius: 0 10px 10px 0;
 }
 
 .previousButton:hover,
-.previousButton:focus,
-.nextButton:hover
-.nextButton:focus {
-  outline: none;
-  background-color: rgb(180, 180, 180, 0.5);
+.nextButton:hover {
   opacity: 1;
+}
+
+.imageContainer {
+  display: flex;
+  position: relative;
+  height: 500px;
+  width: 100%;
+  flex-direction: row;
+  z-index: 5;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  border-radius: 10px;
+  align-content: center;
+}
+
+.imageContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.image {
+  height: 500px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.lastImage {
+  margin: 0;
 }

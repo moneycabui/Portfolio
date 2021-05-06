@@ -1,7 +1,6 @@
 .header {
   margin: 0px;
   display: grid;
-  /* position: sticky; */
   width: calc(100% + 1px);
   position: fixed;
   top: 0px;
@@ -93,7 +92,9 @@
 .projectsLink:hover,
 .resumeLink:hover,
 .contactLink:hover {
+  transition: 800ms;
   border-bottom: solid 3px;
+  color: black;
 }
 
 .iconContainer {
@@ -118,6 +119,7 @@
 
 .resumeIcon:hover,
 .resumeIcon:focus {
+  transition: 800ms;
   border-bottom: solid 5px;
 }
 
