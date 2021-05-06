@@ -13,43 +13,48 @@ const Resume = (props) => {
           <div>
             {/* Make on clicks that take you to links */}
             <div>San Francisco, CA</div>
-            <div>monicabbui@gmail.com</div>
-            <div>linkedin.com/in/monicabui</div>
-            <div>github.com/moneycabui</div>
+            <div onClick={() => window.open('mailto:monicabbui@gmail.com')}>monicabbui@gmail.com</div>
+            <div onClick={() => window.open('https://www.linkedin.com/in/monicabui/')}>linkedin.com/in/monicabui</div>
+            <div onClick={() => window.open('https://github.com/moneycabui')}>github.com/moneycabui</div>
           </div>
         </div>
         <div className={styles.columnOne}>
           <h2>Software Engineering Applications</h2>
           {/* Make on clicks that take you to links */}
-          <h3>Product Manager and Software Programmer</h3>
-          <span className={styles.projectName}>Stitch Saver | </span>
-          <span className={styles.projectGroupName}>Crafty Caribbean</span>
+          <div title="Click to go to GitHub" onClick={() => window.open('https://github.com/Crafty-Caribbean/stitchSaver')} className={styles.gitHubLinks}>
+            <h3>Product Manager and Software Programmer</h3>
+            <span className={styles.projectName}>Stitch Saver | </span>
+            <span className={styles.projectGroupName}>Crafty Caribbean</span>
+          </div>
           <ul>
             <li className={styles.technicalBullets}>Led a team of seven software engineers to create an application designed for discovering and tracking artistic projects</li>
             <li className={styles.technicalBullets}>Constructed the header component - comprised of the search bar, search suggestions, and navigation subcomponents using JavaScript, React, CSS Modules, Node Express, and Postgres</li>
           </ul>
-
-          <h3>Back End Engineer</h3>
-          <span className={styles.projectName}>Atelier System Design | </span>
-          <span className={styles.projectGroupName}>Charismatic Cedar</span>
+          <div title="Click to go to GitHub" onClick={() => window.open('https://github.com/Charismatic-Cedar/QuestionsAPI')} className={styles.gitHubLinks}>
+            <h3>Back End Engineer</h3>
+            <span className={styles.projectName}>Atelier System Design | </span>
+            <span className={styles.projectGroupName}>Charismatic Cedar</span>
+          </div>
           <ul>
             <li className={styles.technicalBullets}>Collaborated in an engineering team of three to construct server and database architecture utilizing Node.js and Express frameworks</li>
             <li className={styles.technicalBullets}>Redesigned database schemas and horizontally scaled services to improve performance capable of handling 2000 requests per second - performance tested using Loader.io and K6</li>
             <li className={styles.technicalBullets}>Deployed microservice with Docker to AWS EC2</li>
             <li className={styles.technicalBullets}>Implemented NGINX load balancer to route traffic volume</li>
           </ul>
-
-          <h3>Full Stack Developer</h3>
-          <span className={styles.projectName}>Magic Meme | </span>
-          <span className={styles.projectGroupName}>Personal Project</span>
+          <div title="Click to go to GitHub" onClick={() => window.open('https://github.com/moneycabui/MagicMeme')} className={styles.gitHubLinks}>
+            <h3>Full Stack Developer</h3>
+            <span className={styles.projectName}>Magic Meme | </span>
+            <span className={styles.projectGroupName}>Personal Project</span>
+          </div>
           <ul>
             <li className={styles.technicalBullets}>Engineered a full stack application to MVP in two days mimicking the novelty fortune-telling magic eight ball that was inspired by flip-a-coin moments</li>
             <li className={styles.technicalBullets}>Requested and served gifs from the Giphy API to answer yes or no questions, retrieved gifs curated from keyword searches, and rendered trending memes</li>
           </ul>
-
-          <h3>Frontend Engineer</h3>
-          <span className={styles.projectName}>Atelier Retail Portal | </span>
-          <span className={styles.projectGroupName}>Oscillating Owls</span>
+          <div title="Click to go to GitHub" onClick={() => window.open('https://github.com/7-Oscillating-Owls/hoo-dunit')} className={styles.gitHubLinks}>
+            <h3>Frontend Engineer</h3>
+            <span className={styles.projectName}>Atelier Retail Portal | </span>
+            <span className={styles.projectGroupName}>Oscillating Owls</span>
+          </div>
           <ul>
             <li className={styles.technicalBullets}>Contributed in a team of four programmers with a concerted effort to construct front-end components of a retail service site</li>
             <li className={styles.technicalBullets}>Leveraged state-based components to render mathematical statistics regarding product characteristics, reviews, and ratings</li>

@@ -74,12 +74,12 @@ class Contact extends React.Component {
       sentStatus,
     } = this.state;
 
-    let sentNotificationRender = <small className={styles.defaultNotification}>Send a message</small>;
+    let sentNotificationRender = <h2 className={styles.defaultNotification}>- • Send a message • -</h2>;
     if (sentStatus === 'sent') {
-      sentNotificationRender = <small className={styles.sentNotification}>Message sent!</small>;
+      sentNotificationRender = <h2 className={styles.sentNotification}>Message sent!</h2>;
     }
     if (sentStatus === 'failed') {
-      sentNotificationRender = <small className={styles.failedNotification}>Message failed to send</small>;
+      sentNotificationRender = <h2 className={styles.failedNotification}>Message failed to send</h2>;
     }
 
     return (

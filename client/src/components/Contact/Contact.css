@@ -98,6 +98,7 @@
 .failedNotification {
   justify-self: center;
   margin: 10px;
+  margin-top: 20px;
   color: white;
 }
 

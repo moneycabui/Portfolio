@@ -1,14 +1,13 @@
 .intro {
   display: grid;
   grid-template-columns: auto;
-  margin: 150px 30px 20px 30px;
+  margin: 100px 30px 20px 30px;
   justify-content: center;
   justify-items: center;
 }
 
 .name,
-p,
-.contactButton {
+p {
   padding: 0;
   position: relative;
 }
@@ -29,52 +28,26 @@ p,
   box-shadow: 2px 2px 5px 1px #8F8F8F;
 }
 
-.hi {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  justify-self: start;
-  margin-left: 20%;
-  font-size: 35px;
-  font-family: Garamond;
-}
-
 .name {
   justify-self: center;
   align-self: center;
-  height: 100px;
-  width: 500px;
+  height: 75px;
+  width: 425px;
 }
 
 .jobTitle {
-  margin: 50px 5px 0 0;
+  margin: 7px 5px 10px 0;
   position: relative;
   justify-self: flex-end;
   font-size: 20px;
 }
 
-.contactButton {
-  margin: 50px 45px 0 0;
-  justify-self: end;
-  padding: 10px 30px;
+.interests {
+  display: grid;
+  grid-template-columns: 90%;
+  position: relative;
   justify-content: center;
-  font-family: "montserrat", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-  color: white;
-  outline: none;
-  border: none;
-  background: linear-gradient(to right, #ddd6f3 0%, #faaca8  51%, #ddd6f3 100%);
-  /* background: linear-gradient(to right, #F5268E, #F53C8E, #F5508E, #F5628E, #F5738E, #F57D8E, #F58A8E, #F58A8E, #F5958E); */
-  background-size: 200%;
-  transition: 500ms;
-  border-radius: 5px;
-  box-shadow: 2px 2px 7px 2px #BFBFBF;
-}
-
-.contactButton:hover,
-.contactButton:focus {
-  background-position: right;
+  justify-self: center;
+  justify-items: center;
+  align-content: center;
 }
