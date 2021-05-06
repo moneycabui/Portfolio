@@ -1,8 +1,7 @@
 import React from 'react';
-import styles from './ProjectsGallery.css';
-import projects from './projects.js';
+import styles from './ImagesGallery.css';
 
-class ProjectsGallery extends React.Component {
+class ImagesGallery extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -19,4 +18,4 @@ class ProjectsGallery extends React.Component {
   }
 }
 
-export default ProjectsGallery;
+export default ImagesGallery;

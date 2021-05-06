@@ -1,5 +1,7 @@
 import React from 'react';
-import ProjectsGallery from './ProjectsGallery';
+// import ImagesGallery from '../ImagesGallery';
+import ImagesCarousel from '../ImagesCarousel';
+import projects from './projects.js';
 import styles from './Projects.css';
 
 const Projects = (props) => {
@@ -7,7 +9,8 @@ const Projects = (props) => {
     <div className={styles.projects}>
       <h2 className={styles.projectsTitle}>- • Software Engineering Applications • -</h2>
       Page currently under construction.
-      <ProjectsGallery />
+      <ImagesCarousel images={projects}/>
+      {/* <ImagesGallery images={projects}/> */}
     </div>
   );
 }

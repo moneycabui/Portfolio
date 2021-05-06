@@ -1,5 +1,6 @@
 import React from 'react';
-import InterestsCarousel from './InterestsCarousel';
+import ImagesCarousel from '../ImagesCarousel';
+import images from './images.js';
 import styles from './Home.css';
 
 const Home = (props) => {
@@ -14,7 +15,7 @@ const Home = (props) => {
       </div>
       <section className={styles.interests}>
         <h2 className={styles.aboutTitle}>- • Interests • -</h2>
-        <InterestsCarousel />
+        <ImagesCarousel images={images} />
       </section>
     </div>
   );

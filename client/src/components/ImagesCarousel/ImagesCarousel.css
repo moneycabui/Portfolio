@@ -1,5 +1,5 @@
 .carousel {
-  margin: 0 0;
+  margin: 10px 0;
   padding: 0 0;
   display: grid;
   grid-template-columns: 50px auto 50px;
@@ -14,9 +14,10 @@
   opacity: 0.5;
   height: 490px;
   width: 50px;
-  background-color: rgb(201, 201, 201, 0.5);
   z-index: 10;
   border: 5px solid transparent;
+  background-color: rgb(201, 201, 201, 0.5);
+  /* background-color: rgba(36, 36, 36, 0.5); */
 }
 
 .previousButton {
@@ -25,7 +26,7 @@
 }
 
 .nextButton {
-  right: 50px;
+  right: 60px;
   border-radius: 0 10px 10px 0;
 }
 
@@ -57,6 +58,13 @@
   height: 500px;
   border-radius: 10px;
   margin-right: 5px;
+}
+
+.image:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  /* transform: scale(1.02, 1.02); */
+  /* height: 500px; */
 }
 
 .lastImage {
