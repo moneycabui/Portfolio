@@ -1,22 +1,10 @@
 const projects = [
-  // ['', ''],
-  // ['', ''],
-  // ['', ''],
-  // ['', ''],
-  // ['', ''],
-  // ['', ''],
-  // ['', ''],
-  // ['', ''],
-  // ['', ''],
-  // ['', '']
-  ['/images/interests/CaboPool.jpeg', 'Cabo'],
-  ['/images/interests/YosemiteBackpacking.jpg', 'Backpacking in Yosemite'],
-  ['/images/interests/GlacierPoint.jpg', 'Glacier Point'],
-  ['/images/interests/YosemiteHammock.jpg', 'Hammocking in Yosemite'],
-  ['/images/interests/BackpackingFood.jpg', 'Enjoying backpacking food at Glacier Point'],
-  ['/images/interests/Canyon.jpeg', 'Canyon in Arizona'],
-  ['/images/interests/LakePowell.jpeg', 'Lake Powell'],
-  ['/images/interests/BobaStitch.jpeg', 'Boba Stitch']
+  // ['/images/projects/FECReviewsRatings.gif', 'Ratings and Reviews Component for Atelier Retail Portal'],
+  ['/images/projects/FECReviews.png', 'Ratings and Reviews Component for Atelier Retail Portal'],
+  ['/images/projects/FECReviewsAndRatings.png', 'Ratings and Reviews Component for Atelier Retail Portal'],
+  ['/images/projects/FECWriteAReviewModal.png', 'Write a Review Modal'],
+  ['/images/projects/StitchSaverHeader.png', 'Header Component for StitchSaver'],
+  // ['/images/projects/.png', 'Ratings and Reviews Component for Atelier Retail Portal'],
 ];
 
 export default projects;

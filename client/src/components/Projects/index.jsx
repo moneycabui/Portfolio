@@ -8,7 +8,6 @@ const Projects = (props) => {
   return (
     <div className={styles.projects}>
       <h2 className={styles.projectsTitle}>- • Software Engineering Applications • -</h2>
-      Page currently under construction.
       <ImagesCarousel images={projects}/>
       {/* <ImagesGallery images={projects}/> */}
     </div>
