@@ -17,7 +17,7 @@ const AboutMe = (props) => {
       <div className={styles.bodyText}>Presently volunteering as a Crisis Counselor at Crisis Text Line.</div>
       <div className={styles.bodyText}>Some of my interests include tennis, backpacking, running (I&apos;ve ran two half marathons), photograhy, and art.</div>
       <h2 className={styles.contactTitle}>- • Contact • -</h2>
-      <div className={styles.bodyText}>Name: Monica Bui</div>
+      <div className={styles.bodyTextg}>Name: Monica Bui</div>
       <div className={styles.contactText} onClick={() => window.open('mailto:monicabbui@gmail.com')}>Email: monicabbui@gmail.com</div>
       <div className={styles.contactText} onClick={() => window.open('https://www.linkedin.com/in/monicabui/')}>linkedin.com/in/monicabui/</div>
       <div className={styles.contactText} onClick={() => window.open('https://github.com/moneycabui')}>github.com/moneycabui</div>
