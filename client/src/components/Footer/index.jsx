@@ -9,7 +9,8 @@ const Footer = (props) => {
     <div>
       <div className={styles.emailFooter}>
         <Link title="Contact Page" to="/Contact" className={styles.link}>• </Link>
-        <span onClick={() => window.open('mailto:monicabbui@gmail.com')}>Email: monicabbui@gmail.com</span>
+        <Link title="Email" to="/Contact" className={styles.emailLink}>Email: monicabbui@gmail.com</Link>
+        {/* <span onClick={() => window.open('mailto:monicabbui@gmail.com')}>Email: monicabbui@gmail.com</span> */}
         <Link title="Contact Page" to="/Contact" className={styles.link}> •••••••</Link>
       </div>
       <div className={styles.socialMediaContainer}>

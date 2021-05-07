@@ -24,11 +24,11 @@
   border-radius: 10px 0 0 10px;
 }
 
-.previousTemp {
+.previousButtonPlaceholder {
   position: relative;
   color: transparent;
   position: relative;
-  opacity: 0;
+  opacity: 1;
   height: 490px;
   width: 50px;
   z-index: 10;
@@ -42,7 +42,7 @@
 
 .previousButton:hover,
 .nextButton:hover {
-  opacity: 0.9;
+  opacity: 0.8;
   background-color: rgba(62, 61, 61, 0.5);
   transition: 500ms;
   width: 45px;

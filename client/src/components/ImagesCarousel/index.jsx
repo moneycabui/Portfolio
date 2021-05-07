@@ -28,18 +28,13 @@ class ImagesCarousel extends React.Component {
       showLeftArrow: carousel.scrollLeft > 0,
       showRightArrow: carousel.scrollLeft < carouselWidth,
     })
-    console.log('Scrolled');
   }
-
-
-  // <div className={`image ${styles.imageA} `} style={{ width: `${cardWidth}`, gridRowEnd: `span ${gridSpan}` }}
-  // <img className={styles.image} src="/images/interests/CaboPool.jpeg" alt="Cabo" />
 
   render () {
     const { showLeftArrow, showRightArrow } = this.state;
     const { images } = this.props;
 
-    const scrollLength = 375; // Change to width
+    const scrollLength = 375; // Future implementation: customized lengths
     const imagesRender = images.map((image, index) => (
       <img
         className={styles.image}
@@ -56,10 +51,10 @@ class ImagesCarousel extends React.Component {
         {showLeftArrow
         ? <IoIosArrowBack
           className={styles.previousButton}
-          size="30"
+          size="20"
           onClick={(event) => this.xScroll(event, -scrollLength)}
           />
-          : <div className={styles.previousTemp}></div>
+          : <div className={styles.previousButtonPlaceholder}></div>
         }
         <div
           id='imageContainer'
@@ -71,7 +66,7 @@ class ImagesCarousel extends React.Component {
         {showRightArrow &&
           <IoIosArrowForward
           className={styles.nextButton}
-          size="30"
+          size="20"
           onClick={(event) => this.xScroll(event, scrollLength)}
           />
         }

@@ -14,7 +14,7 @@ const Home = (props) => {
         <p className={styles.jobTitle}>Software Engineer in the Bay Area</p>
       </div>
       <section className={styles.interests}>
-        <h2 className={styles.aboutTitle}>- • Interests • -</h2>
+        <h2 className={styles.aboutTitle}>- • Preview of My Life • -</h2>
         <ImagesCarousel images={images} />
       </section>
     </div>

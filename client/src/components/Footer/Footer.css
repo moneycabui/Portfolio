@@ -1,7 +1,7 @@
 .socialMediaContainer {
   writing-mode: vertical-rl;
   position: fixed;
-  left: 25px;
+  left: 30px;
   bottom: 5px;
   opacity: 0.9;
   padding: 10px 0px;
@@ -10,7 +10,8 @@
   opacity: 0.9;
 }
 
-.link {
+.link,
+.emailLink {
   color: #ABABAB;
   border: none;
   outline: none;
@@ -18,8 +19,13 @@
   text-decoration: none;
 }
 
-.link:hover {
+.emailLink {
+  color: #7d7d7d;
+}
+
+.emailLink:hover {
   color: black;
+  transition: 800ms;
 }
 
 .emailIcon,
@@ -27,7 +33,7 @@
 .ghIcon,
 .igIcon,
 .fbIcon {
-  font-size: 25px;
+  font-size: 35px;
   padding: 5px;
   color: #ABABAB;
   cursor: pointer;
@@ -84,7 +90,7 @@
 
 .socialMediaContainer:hover,
 .emailFooter:hover {
-  background-color: #F2F2F2;
+  /* background-color: #F2F2F2; */
   transition: 250ms;
-  color: black;
+  /* color: black; */
 }
