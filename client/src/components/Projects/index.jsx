@@ -9,7 +9,7 @@ const Projects = (props) => {
     <div className={styles.projects}>
       <h2 className={styles.projectsTitle}>- • Software Engineering Applications • -</h2>
       {/* <ImagesCarousel images={projects}/> */}
-      <ImagesGallery images={projects}/>
+      {/* <ImagesGallery images={projects}/> */}
     </div>
   );
 }

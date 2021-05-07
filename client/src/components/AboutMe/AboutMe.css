@@ -1,6 +1,6 @@
 .intro {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 95%;
   margin: 150px 30px 20px 30px;
   justify-content: center;
   justify-items: center;
@@ -14,7 +14,7 @@ p,
 }
 
 .profileWrapper {
-  margin: 30px 10% 20px auto;
+  margin: 30px 20% 20px auto;
   display: grid;
   grid-template-columns: 100px auto;
   height: 100px;
@@ -71,7 +71,7 @@ p,
 
 .contactButton {
   position: relative;
-  margin-top: 50px;
+  margin: 25px auto;
   padding: 10px 30px;
   justify-content: center;
   font-family: "montserrat", sans-serif;
