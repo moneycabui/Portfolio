@@ -102,3 +102,10 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Database
+authorization.js
+
+# Dist folder and Bundle
+dist/
+bundle.js
