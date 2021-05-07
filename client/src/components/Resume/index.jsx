@@ -15,7 +15,7 @@ const Resume = (props) => {
             <div>San Francisco, CA</div>
             <div onClick={() => window.open('mailto:monicabbui@gmail.com')}>monicabbui@gmail.com</div>
             <div onClick={() => window.open('https://www.linkedin.com/in/monicabui/')}>linkedin.com/in/monicabui</div>
-            <div onClick={() => window.open('https://github.com/moneycabui')}>github.com/moneycabui</div>
+            <div onClick={() => window.open('https://github.com/moneycabui/Portfolio')}>github.com/moneycabui</div>
           </div>
         </div>
         <div className={styles.columnOne}>

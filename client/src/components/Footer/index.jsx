@@ -35,7 +35,7 @@ const Footer = (props) => {
         />
         <FaGithub
           title="GitHub"
-          onClick={() => window.open('https://github.com/moneycabui')}
+          onClick={() => window.open('https://github.com/moneycabui/Portfolio')}
           className={styles.ghIcon}
         />
         <Link title="Contact Page" to="/Contact" className={styles.link}> •••••••••••••••</Link>

@@ -48,7 +48,7 @@ class Header extends React.Component {
           />
           <FaGithub
             title="GitHub"
-            onClick={() => window.open('https://github.com/moneycabui')}
+            onClick={() => window.open('https://github.com/moneycabui/Portfolio')}
             className={styles.ghIcon}
           />
           {/* Dark mode toggle */}

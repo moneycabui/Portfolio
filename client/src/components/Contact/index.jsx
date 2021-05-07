@@ -109,7 +109,7 @@ class Contact extends React.Component {
           />
           <FaGithub
             title="GitHub: @moneycabui"
-            onClick={() => window.open('https://github.com/moneycabui')}
+            onClick={() => window.open('https://github.com/moneycabui/Portfolio')}
             className={styles.ghIcon}
           />
         </div>

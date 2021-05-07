@@ -20,7 +20,7 @@ const AboutMe = (props) => {
       <div className={styles.bodyTextg}>Name: Monica Bui</div>
       <div className={styles.contactText} onClick={() => window.open('mailto:monicabbui@gmail.com')}>Email: monicabbui@gmail.com</div>
       <div className={styles.contactText} onClick={() => window.open('https://www.linkedin.com/in/monicabui/')}>linkedin.com/in/monicabui/</div>
-      <div className={styles.contactText} onClick={() => window.open('https://github.com/moneycabui')}>github.com/moneycabui</div>
+      <div className={styles.contactText} onClick={() => window.open('https://github.com/moneycabui/Portfolio')}>github.com/moneycabui</div>
       <Link to="/Contact" className={styles.contactLink}>
         <button className={styles.contactButton}>Contact Me</button>
       </Link>
