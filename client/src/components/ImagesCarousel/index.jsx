@@ -6,18 +6,29 @@ class ImagesCarousel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showLeftArrow: true,
+      showLeftArrow: false,
       showRightArrow: true,
     };
     this.xScroll = this.xScroll.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
   xScroll(event, x) {
-    const { leftRightClicks } = this.state;
+    const { showLeftArrow, showRightArrow } = this.state;
     event.stopPropagation();
-    const images = document.getElementById('imageContainer');
-    // images.scroll(x, 0);
-    images.scrollLeft += x;
+    const carousel = document.getElementById('imageContainer');
+    carousel.scrollLeft += x;
+    this.handleScroll();
+  }
+
+  handleScroll() {
+    const carousel = document.getElementById('imageContainer');
+    const carouselWidth = carousel.scrollWidth - carousel.clientWidth - 5;
+    this.setState({
+      showLeftArrow: carousel.scrollLeft > 0,
+      showRightArrow: carousel.scrollLeft < carouselWidth,
+    })
+    console.log('Scrolled');
   }
 
 
@@ -27,6 +38,8 @@ class ImagesCarousel extends React.Component {
   render () {
     const { showLeftArrow, showRightArrow } = this.state;
     const { images } = this.props;
+
+    const scrollLength = 375; // Change to width
     const imagesRender = images.map((image, index) => (
       <img
         className={styles.image}
@@ -37,25 +50,29 @@ class ImagesCarousel extends React.Component {
       />
     ))
 
-    const scrollLength = 375;
 
     return (
       <div className={styles.carousel}>
-        {showLeftArrow &&
-          <IoIosArrowBack
-            className={styles.previousButton}
-            size="30"
-            onClick={(event) => this.xScroll(event, -scrollLength)}
+        {showLeftArrow
+        ? <IoIosArrowBack
+          className={styles.previousButton}
+          size="30"
+          onClick={(event) => this.xScroll(event, -scrollLength)}
           />
+          : <div className={styles.previousTemp}></div>
         }
-        <div id='imageContainer' className={styles.imageContainer}>
+        <div
+          id='imageContainer'
+          className={styles.imageContainer}
+          onScroll={this.handleScroll}
+        >
           {imagesRender}
         </div>
         {showRightArrow &&
           <IoIosArrowForward
-            className={styles.nextButton}
-            size="30"
-            onClick={(event) => this.xScroll(event, scrollLength)}
+          className={styles.nextButton}
+          size="30"
+          onClick={(event) => this.xScroll(event, scrollLength)}
           />
         }
       </div>

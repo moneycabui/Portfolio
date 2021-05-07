@@ -24,6 +24,17 @@
   border-radius: 10px 0 0 10px;
 }
 
+.previousTemp {
+  position: relative;
+  color: transparent;
+  position: relative;
+  opacity: 0;
+  height: 490px;
+  width: 50px;
+  z-index: 10;
+  border: 5px solid transparent;
+}
+
 .nextButton {
   right: 60px;
   border-radius: 0 10px 10px 0;
