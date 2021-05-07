@@ -1,6 +1,6 @@
 .carousel {
   margin: 10px 0;
-  padding: 0 0;
+  padding: 0;
   display: grid;
   grid-template-columns: 50px auto 50px;
   width: calc(100% + 100px);
