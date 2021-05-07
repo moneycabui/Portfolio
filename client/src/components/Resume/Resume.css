@@ -2,12 +2,12 @@
   display: grid;
   grid-template-columns: 100px auto;
   column-gap: 30px;
-  margin: 20px;
-  margin-top: 100px;
+  margin: 150px 20px 100px 20px;
   justify-content: center;
   justify-items: center;
   font-size: 11px;
   color: #666666;
+  transform: scale(1.1, 1.1);
 }
 
 p,
@@ -36,6 +36,10 @@ li {
   box-shadow: 2px 2px 7px 2px #EDEDED;
   display: grid;
   grid-template-columns: 3fr 2fr;
+}
+
+.paper:hover {
+
 }
 
 .name {
