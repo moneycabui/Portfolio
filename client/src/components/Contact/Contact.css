@@ -288,17 +288,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .iconWrapper {
-    width: 75%;
-  }
-}
-
 @media screen and (max-width: 475px) {
-  .iconWrapper {
-    width: 85%;
-  }
-
   .characterCount,
   .note {
     font-size: 9px;
@@ -306,22 +296,9 @@
 }
 
 @media screen and (max-width: 425px) {
-  .iconWrapper {
-    width: 95%;
-  }
   .characterCount,
   .note {
     font-size: 8px;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .liIcon,
-  .emailIcon,
-  .igIcon,
-  .fbIcon,
-  .ghIcon {
-    font-size: 35px
   }
 }
 
