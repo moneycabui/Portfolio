@@ -18,10 +18,10 @@
 
 .gallery {
   display: grid;
+  row-gap: 30px;
   position: relative;
-  grid-template-columns: 90%;
+  grid-template-columns: 70%;
   justify-content: center;
   justify-items: center;
   justify-self: center;
-  border: 1px solid green;
 }

@@ -1,4 +1,5 @@
 const images = [
+  // Array format: [src, alt];
   ['/images/interests/CaboPool.jpeg', 'Cabo'],
   ['/images/interests/YosemiteBackpacking.jpg', 'Backpacking in Yosemite'],
   ['/images/interests/GlacierPoint.jpg', 'Glacier Point'],
