@@ -1,7 +1,7 @@
 import React from 'react';
 import ImagesGallery from '../ImagesGallery';
-import ImagesCarousel from '../ImagesCarousel';
-import projects from './projects.js';
+import fecProject from './fecProject.js';
+import sdcProject from './sdcProject.js';
 import styles from './Projects.css';
 
 const Projects = (props) => {
@@ -9,11 +9,11 @@ const Projects = (props) => {
     <div className={styles.projects}>
       <h2 className={styles.projectsTitle}>- • Software Engineering Applications • -</h2>
       <div className={styles.gallery}>
-        <ImagesGallery images={projects}/>
+        <ImagesGallery images={fecProject}/>
+        <ImagesGallery images={sdcProject}/>
+        <ImagesGallery images={fecProject}/>
+        <ImagesGallery images={sdcProject}/>
       </div>
-      {/* <div className={styles.carousel}>
-        <ImagesCarousel images={projects} />
-      </div> */}
     </div>
   );
 }

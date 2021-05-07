@@ -13,7 +13,7 @@ class ImagesGallery extends React.Component {
     const { images } = this.props;
     const imagesGalleryRender = images.map((image, index) => (
       <img
-        className={styles.image}
+        className={`${styles.image}${index} ${styles.image}`}
         id={image + index}
         src={image[0]}
         alt={image[1]}
@@ -23,9 +23,7 @@ class ImagesGallery extends React.Component {
 
     return (
       <div className={styles.gallery}>
-      <div className={styles.imageContainer}>
         {imagesGalleryRender}
-      </div>
       </div>
     );
   }

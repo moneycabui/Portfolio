@@ -9,18 +9,31 @@ class ImagesCarousel extends React.Component {
       showLeftArrow: false,
       showRightArrow: true,
     };
-    this.xScroll = this.xScroll.bind(this);
-    this.handleScroll = this.handleScroll.bind(this);
+    this.handleScrollClick = this.handleScrollClick.bind(this);
+    this.handleWheelScroll = this.handleWheelScroll.bind(this);
+    this.handleScrollArrows = this.handleScrollArrows.bind(this);
   }
 
-  xScroll(event, x) {
+  handleScrollClick(event, x) {
     event.stopPropagation();
     const carousel = document.getElementById('imageContainer');
     carousel.scrollLeft += x;
-    this.handleScroll();
+    this.handleScrollArrows();
   }
 
-  handleScroll() {
+  handleWheelScroll(event) {
+    event.stopPropagation();
+    const carousel = document.getElementById('imageContainer');
+    const carouselScrollPosition = carousel.scrollLeft;
+    carousel.scrollTo({
+        top: 0,
+        left: (carouselScrollPosition + event.deltaY),
+        behaviour: 'smooth',
+    })
+    this.handleScrollArrows();
+  }
+
+  handleScrollArrows() {
     event.stopPropagation();
     const carousel = document.getElementById('imageContainer');
     const scrollableWidth = carousel.scrollWidth - carousel.clientWidth - 5;
@@ -29,6 +42,7 @@ class ImagesCarousel extends React.Component {
       showRightArrow: carousel.scrollLeft < scrollableWidth,
     })
   }
+
 
   render () {
     const { showLeftArrow, showRightArrow } = this.state;
@@ -51,14 +65,15 @@ class ImagesCarousel extends React.Component {
         ? <IoIosArrowBack
           className={styles.previousButton}
           size="20"
-          onClick={(event) => this.xScroll(event, -scrollLength)}
+          onClick={(event) => this.handleScrollClick(event, -scrollLength)}
           />
           : <div className={styles.previousButtonPlaceholder}></div>
         }
         <div
           id='imageContainer'
           className={styles.imageContainer}
-          onScroll={this.handleScroll}
+          onScroll={this.handleScrollArrows}
+          onWheel={this.handleWheelScroll}
         >
           {imagesRender}
         </div>
@@ -66,7 +81,7 @@ class ImagesCarousel extends React.Component {
           <IoIosArrowForward
           className={styles.nextButton}
           size="20"
-          onClick={(event) => this.xScroll(event, scrollLength)}
+          onClick={(event) => this.handleScrollClick(event, scrollLength)}
           />
         }
       </div>

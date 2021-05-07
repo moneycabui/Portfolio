@@ -1,9 +1,18 @@
 .gallery {
-  margin: 0;
-  padding: 0;
   display: grid;
-  grid-template-columns: auto;
+  position: relative;
+  padding: 0;
+  margin: 20px 0;
+  margin-bottom: 80px;
+  justify-items: center;
+  box-shadow: 2px 2px 7px 1px #d7d7d7;
+  /* border-radius: 50px; */
+  border: 1px solid pink;
 }
 
-.imageContainer {
+.image {
+  box-shadow: 2px 2px 7px 1px #000000;
+  /* border-radius: 50px; */
+  position: relative;
+  width: 500px;
 }

@@ -17,5 +17,11 @@
 }
 
 .gallery {
-  width: 90%;
+  display: grid;
+  position: relative;
+  grid-template-columns: 90%;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  border: 1px solid green;
 }
