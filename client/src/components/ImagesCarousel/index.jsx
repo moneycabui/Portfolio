@@ -14,7 +14,6 @@ class ImagesCarousel extends React.Component {
   }
 
   xScroll(event, x) {
-    const { showLeftArrow, showRightArrow } = this.state;
     event.stopPropagation();
     const carousel = document.getElementById('imageContainer');
     carousel.scrollLeft += x;
@@ -22,19 +21,19 @@ class ImagesCarousel extends React.Component {
   }
 
   handleScroll() {
+    event.stopPropagation();
     const carousel = document.getElementById('imageContainer');
-    const carouselWidth = carousel.scrollWidth - carousel.clientWidth - 5;
+    const scrollableWidth = carousel.scrollWidth - carousel.clientWidth - 5;
     this.setState({
       showLeftArrow: carousel.scrollLeft > 0,
-      showRightArrow: carousel.scrollLeft < carouselWidth,
+      showRightArrow: carousel.scrollLeft < scrollableWidth,
     })
   }
 
   render () {
     const { showLeftArrow, showRightArrow } = this.state;
     const { images } = this.props;
-
-    const scrollLength = 375; // Future implementation: customized lengths
+    const scrollLength = 375; // Future implementation: pass down scroll length
     const imagesRender = images.map((image, index) => (
       <img
         className={styles.image}

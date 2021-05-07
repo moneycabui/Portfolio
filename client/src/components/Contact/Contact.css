@@ -13,58 +13,6 @@
   margin: 20px;
 }
 
-.iconWrapper {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  align-content: center;
-  width: 25%;
-}
-
-.liIcon,
-.emailIcon,
-.igIcon,
-.fbIcon,
-.ghIcon {
-  position: relative;
-  font-size: 50px;
-  cursor: pointer;
-}
-
-.liIcon {
-  color: #0077b5;
-}
-
-.emailIcon {
-  color: #BB001B;
-}
-
-.igIcon {
-  color: #bc2a8d;
-}
-
-.fbIcon {
-  color: #4267B2;
-}
-
-.ghIcon {
-  color: #211F1F;
-}
-
-.liIcon:hover,
-.emailIcon:hover,
-.igIcon:hover,
-.fbIcon:hover,
-.ghIcon:hover,
-.liIcon:focus,
-.emailIcon:focus,
-.igIcon:focus,
-.fbIcon:focus,
-.ghIcon:focus {
-  opacity: 0.7;
-  transition: 950ms;
-}
-
 .messageContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -251,10 +199,6 @@
 }
 
 @media screen and (max-width: 1350px) {
-  .iconWrapper {
-    width: 30%;
-  }
-
   .messageForm {
     width: 60%;
   }
@@ -265,10 +209,6 @@
 }
 
 @media screen and (max-width: 1250px) {
-  .iconWrapper {
-    width: 35%;
-  }
-
   .messageForm {
     width: 75%;
   }
@@ -279,10 +219,6 @@
 }
 
 @media screen and (max-width: 1120px) {
-  .iconWrapper {
-    width: 40%;
-  }
-
   .messageForm {
     width: 85%;
   }
@@ -303,17 +239,7 @@
   }
 }
 
-@media screen and (max-width: 925px) {
-  .iconWrapper {
-    width: 45%;
-  }
-}
-
 @media screen and (max-width: 850px) {
-  .iconWrapper {
-    width: 50%;
-  }
-
   .characterCount,
   .note {
     font-size: 8px;
@@ -346,10 +272,6 @@
 }
 
 @media screen and (max-width: 685px) {
-  .iconWrapper {
-    width: 65%;
-  }
-
   .messageContainer {
     grid-template-columns: 1fr;
     justify-items: center;
