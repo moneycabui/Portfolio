@@ -15,7 +15,9 @@ const Home = (props) => {
       </div>
       <section className={styles.interests}>
         <h2 className={styles.aboutTitle}>- • Preview of My Life • -</h2>
-        <ImagesCarousel images={images} />
+        <div className={styles.carousel}>
+          <ImagesCarousel images={images} />
+        </div>
       </section>
     </div>
   );

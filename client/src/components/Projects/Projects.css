@@ -9,3 +9,9 @@
 .projectsTitle {
   margin: 20px;
 }
+
+.carousel {
+  border: solid black 10px;
+  width: 90%;
+  height: 100%;
+}
