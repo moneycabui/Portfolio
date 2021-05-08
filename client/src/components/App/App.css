@@ -12,4 +12,6 @@ html, body {
   margin: 0 auto;
   position: relative;
   color: #575757;
+  justify-items: center;
+  justify-content: center;
 }
