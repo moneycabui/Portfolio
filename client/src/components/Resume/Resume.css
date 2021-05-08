@@ -28,13 +28,14 @@ li {
 
 .title {
   position: relative;
-  font-size: 75px;
+  font-size: 30px;
   font-family: Garamond;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   text-align: center;
   margin: 0;
   box-shadow: 2px 2px 7px 2px #EDEDED;
+  background-color: white;
 }
 
 .paper {
@@ -45,6 +46,7 @@ li {
   box-shadow: 2px 2px 7px 2px #EDEDED;
   display: grid;
   grid-template-columns: 3fr 2fr;
+  background-color: white;
 }
 
 .name {

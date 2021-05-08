@@ -10,7 +10,7 @@ const Resume = () => {
         <ResumeDownload />
       </div>
       <div className={styles.resumeWrapper}>
-        <p className={styles.title}>Resume</p>
+        <p className={styles.title}>Monica Bui Resume</p>
         <div className={styles.paper}>
           <div className={styles.name}>
             <h1>Monica Bui</h1>
