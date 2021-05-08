@@ -4,11 +4,12 @@ const project = [
   // projects[1] -> Project Details
   [
     // Array format: [src, alt]
-    ['/images/projects/FECReviews.png', 'Ratings and Reviews Component for Atelier Retail Portal'],
-    ['/images/projects/FECReviewsAndRatings.png', 'Ratings and Reviews Component for Atelier Retail Portal'],
-    ['/images/projects/FECReviewsAndRatings.png', 'Ratings and Reviews Component for Atelier Retail Portal'],
-    ['/images/projects/FECReviewsAndRatings.png', 'Ratings and Reviews Component for Atelier Retail Portal'],
-    ['/images/projects/FECWriteAReviewModal.png', 'Write a Review Modal'],
+    ['/images/interests/GlacierPoint.jpg', 'Glacier Point'],
+    ['/images/interests/YosemiteHammock.jpg', 'Hammocking in Yosemite'],
+    ['/images/interests/BackpackingFood.jpg', 'Enjoying backpacking food at Glacier Point'],
+    ['/images/interests/Canyon.jpeg', 'Canyon in Arizona'],
+    ['/images/interests/LakePowell.jpeg', 'Lake Powell'],
+    ['/images/interests/BobaStitch.jpeg', 'Boba Stitch'],
     ['/images/projects/IMAGENAME.png', 'Alt Text for image'],
     ['/images/projects/IMAGENAME2.png', 'Alt Text for image'],
     ['/images/projects/IMAGENAME3.png', 'Alt Text for image'],

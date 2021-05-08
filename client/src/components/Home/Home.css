@@ -53,6 +53,7 @@ p {
 }
 
 .aboutTitle {
+  display: none;
   margin-bottom: 20px;
   font-size: 20px;
 }

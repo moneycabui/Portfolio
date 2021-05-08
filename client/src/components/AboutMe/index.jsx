@@ -3,7 +3,7 @@ import ContactAndSocialIcons from '../ContactAndSocialIcons';
 import styles from './AboutMe.css';
 import { Link } from 'react-router-dom';
 
-const AboutMe = (props) => {
+const AboutMe = () => {
   return (
     <div className={styles.intro}>
       <p className={styles.hi}>Hi, my name is</p>

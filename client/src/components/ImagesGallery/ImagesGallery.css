@@ -4,11 +4,10 @@
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: 250px 250px;
   grid-gap: 10px;
-  column-gap: 12px;
   padding: 0;
   margin: 0;
   justify-items: center;
-  box-shadow: 2px 2px 7px 1px #aeaeae;
+  box-shadow: 2px 2px 7px 1px #b5b4b4;
   border-radius: 20px;
   overflow: hidden;
   width: 100%;
@@ -25,6 +24,7 @@
   text-align: center;
   font-size: 12px;
   padding: 20px;
+  background-color: white;
 }
 
 .projectTitle {
@@ -71,12 +71,18 @@
   overflow: hidden;
   height: 250px;
   cursor: pointer;
+  object-fit: cover;
+  /* border: 1px solid black; */
+}
+
+.projectDetails,
+.imageWrapper {
+  /* box-shadow: 2px 2px 7px 1px #aeaeae; */
 }
 
 .image:hover {
   transition: 800ms;
-  transform: scale(1.01, 1.01);
+  transform: scale(1.03, 1.03);
   height: 250px;
   opacity: 0.9;
 }
-

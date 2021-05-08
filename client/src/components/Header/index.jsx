@@ -27,10 +27,16 @@ class Header extends React.Component {
         </div>
         <div className={styles.iconContainer}>
           <ImProfile
-            title="Resume PDF"
+            title="View Resume PDF"
             onClick={() => window.open('https://drive.google.com/file/d/1isTzwIon2eTMz--pCZQEDXBBBONKeiuk/view?usp=sharing')}
             className={styles.resumeIcon}
           />
+          <a href="/documents/resume/MonicaBuiResume.pdf" download="Monica Bui Resume">
+            <ImProfile
+              title="Download Resume PDF"
+              className={styles.resumeIcon}
+            />
+          </a>
 
           {/* Dark mode toggle */}
           {/* If current page is dark mode have sun icon */}

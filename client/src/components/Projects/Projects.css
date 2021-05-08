@@ -17,11 +17,16 @@
 }
 
 .gallery {
+  margin: 20px auto 50px auto;
+  padding: 50px;
   display: grid;
-  row-gap: 30px;
+  row-gap: 50px;
   position: relative;
   grid-template-columns: 70%;
   justify-content: center;
   justify-items: center;
   justify-self: center;
+  background-color: #f8e7fec2;
+  border-radius: 10px;
+  width: 80%;
 }

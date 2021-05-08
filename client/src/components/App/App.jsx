@@ -29,7 +29,7 @@ class App extends React.Component {
             <Route path="/Projects" component={Projects} exact/>
             <Route path="/Contact" component={Contact} exact/>
             <Route path="/Resume" component={Resume} exact/>
-            <Route path="*" render={() => (<div>No Route</div>)} />
+            <Route path="*" render={() => (<div>Page does not exist.</div>)} />
           </Switch>
           <Footer />
         </div>

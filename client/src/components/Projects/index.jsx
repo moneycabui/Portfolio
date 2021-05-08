@@ -6,7 +6,7 @@ import fecProject from './fecProject.js';
 import sdcProject from './sdcProject.js';
 import styles from './Projects.css';
 
-const Projects = (props) => {
+const Projects = () => {
   const listOfProjects = [mvpProject, blueOceanProject, fecProject, sdcProject];
 
   const projectCards = listOfProjects.map((project, index) => (
