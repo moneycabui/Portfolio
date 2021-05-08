@@ -12,7 +12,7 @@ const project = [
   [
     // Array format: [title, group name, job title, project link, project description]
     'Project Name',
-    'Group Name: Name',
+    'Group Project - Name',
     'JobTitle',
     'https://github.com/moneycabui/Portfolio',
     'Description of project goes here. Yayayayyayayaya yayayyaaya ayyayayayyayaya yayayayayay.'

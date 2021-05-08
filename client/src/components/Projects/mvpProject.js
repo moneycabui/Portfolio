@@ -16,11 +16,11 @@ const project = [
   ],
   [
     // Array format: [title, group name, job title, project link, project description]
-    'Atelier System Design',
-    'Group Project - Charismatic Cedar',
-    'Back End Engineer',
-    'https://github.com/Charismatic-Cedar/QuestionsAPI',
-    'Collaborated in an engineering team of three to construct server and database architecture utilizing Node.js and Express frameworks. Redesigned database schemas and horizontally scaled services to improve performance capable of handling 2000 requests per second - performance tested using Loader.io and K6. Deployed microservice with Docker to AWS EC2. Implemented NGINX load balancer to route traffic volume.'
+    'Magic Meme',
+    'Personal Project - Monica Bui',
+    'Full Stack Developer',
+    'https://github.com/moneycabui/MagicMeme',
+    'Engineered a full stack application to MVP in two days mimicking the novelty fortune-telling magic eight ball that was inspired by flip-a-coin moments. Requested and served gifs from the Giphy API to answer yes or no questions, retrieved gifs curated from keyword searches, and rendered trending memes.'
   ]
 ]
 
