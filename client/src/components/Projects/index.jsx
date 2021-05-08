@@ -1,5 +1,6 @@
 import React from 'react';
 import ImagesGallery from '../ImagesGallery';
+import ResumeDownload from '../ResumeDownload';
 import blueOceanProject from './blueOceanProject.js';
 import mvpProject from './mvpProject.js';
 import fecProject from './fecProject.js';
@@ -17,6 +18,7 @@ const Projects = () => {
     <div className={styles.projects}>
       <h2 className={styles.projectsTitle}>- • Software Engineering Applications • -</h2>
       <div className={styles.gallery}>
+        <ResumeDownload />
         {projectCards}
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ImProfile } from 'react-icons/im';
+import { FaFileDownload } from 'react-icons/fa';
 import styles from './Header.css';
 import { Link } from 'react-router-dom';
 
@@ -28,13 +29,13 @@ class Header extends React.Component {
         <div className={styles.iconContainer}>
           <ImProfile
             title="View Resume PDF"
-            onClick={() => window.open('https://drive.google.com/file/d/1isTzwIon2eTMz--pCZQEDXBBBONKeiuk/view?usp=sharing')}
+            onClick={() => window.open('/documents/MonicaBuiResume.pdf')}
             className={styles.resumeIcon}
           />
-          <a href="/documents/resume/MonicaBuiResume.pdf" download="Monica Bui Resume">
-            <ImProfile
+          <a href="/documents/MonicaBuiResume.pdf" download="Monica Bui Resume">
+            <FaFileDownload
               title="Download Resume PDF"
-              className={styles.resumeIcon}
+              className={styles.downloadIcon}
             />
           </a>
 

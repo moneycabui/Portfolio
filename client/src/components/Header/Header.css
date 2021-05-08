@@ -107,7 +107,8 @@
   height: 100px;
 }
 
-.resumeIcon {
+.resumeIcon,
+.downloadIcon {
   position: relative;
   padding: 0 10px;
   color: #575757;
@@ -117,8 +118,14 @@
   font-size: 30px;
 }
 
+.downloadIcon {
+  font-size: 22px;
+}
+
 .resumeIcon:hover,
-.resumeIcon:focus {
+.resumeIcon:focus,
+.downloadIcon:hover,
+.downloadIcon:focus {
   transition: 800ms;
   border-bottom: solid 5px;
 }
