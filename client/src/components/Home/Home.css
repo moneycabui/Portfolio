@@ -1,3 +1,9 @@
+.hello {
+  animation-name: moveLeftToRight;
+  animation-duration: 1000s;
+  width: 
+}
+
 .intro {
   display: grid;
   grid-template-columns: auto;
@@ -60,4 +66,14 @@ p {
 
 .carousel {
   width: 90%;
+}
+
+/* Keyframes */
+@keyframes moveLeftToRight {
+  from{
+    transform: translateX(-1000px);
+  }
+  to{
+    transform: translateX(100000px);
+  }
 }

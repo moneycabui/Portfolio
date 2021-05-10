@@ -1,5 +1,9 @@
 import React from 'react';
 import ContactAndSocialIcons from '../ContactAndSocialIcons';
+import { BsPersonLinesFill } from 'react-icons/bs';
+import { GoMail } from 'react-icons/go';
+import { FaLinkedin } from 'react-icons/fa';
+import { VscGithub } from 'react-icons/vsc';
 import styles from './AboutMe.css';
 import { Link } from 'react-router-dom';
 
@@ -21,10 +25,22 @@ const AboutMe = () => {
         <div className={styles.bodyText}>Some of my interests include tennis, backpacking, running (I&apos;ve ran two half marathons), photograhy, and art.</div>
 
         <h2 className={styles.contactTitle}>- • Contact • -</h2>
-        <div className={styles.bodyTextg}>Name: Monica Bui</div>
-        <div className={styles.contactText} onClick={() => window.open('mailto:monicabbui@gmail.com')}>Email: monicabbui@gmail.com</div>
-        <div className={styles.contactText} onClick={() => window.open('https://www.linkedin.com/in/monicabui/')}>linkedin.com/in/monicabui/</div>
-        <div className={styles.contactText} onClick={() => window.open('https://github.com/moneycabui/Portfolio')}>github.com/moneycabui</div>
+        <div className={styles.bodyTextg}>
+          <BsPersonLinesFill className={styles.contactIcon} />
+          <span> Monica Bui</span>
+        </div>
+        <div className={styles.contactText} onClick={() => window.open('mailto:monicabbui@gmail.com')}>
+          <GoMail className={styles.contactIcon} />
+          <span>monicabbui@gmail.com</span>
+        </div>
+        <div className={styles.contactText} onClick={() => window.open('https://www.linkedin.com/in/monicabui/')}>
+          <FaLinkedin className={styles.contactIcon} />
+          <span>linkedin.com/in/monicabui/</span>
+        </div>
+        <div className={styles.contactText} onClick={() => window.open('https://github.com/moneycabui/Portfolio')}>
+          <VscGithub className={styles.contactIcon} />
+          <span>github.com/moneycabui</span>
+        </div>
         <Link to="/Contact" className={styles.contactLink}>
           <button className={styles.contactButton}>Contact Me</button>
         </Link>
