@@ -4,11 +4,18 @@ const project = [
   // projects[1] -> Project Details
   [
     // Array format: [src, alt]
+    ['/images/projects/FECReviewsAndRatingsOverview.png', 'Ratings and Reviews Overview'],
+    ['/images/projects/FECProductCharacteristics.png', 'Ratings and Reviews Product Characteristics Component'],
+    ['/images/projects/FECAppWithTwoReviews.png', 'Ratings and Reviews Component for Atelier Retail Portal'],
+    ['/images/projects/FECWriteAReviewHoverStars.png', 'Ratings and Reviews - Write a Review Modal'],
+    ['/images/projects/FECReviewTiles.png', 'Review Tiles'],
+    ['/images/projects/FECWriteAReviewButtons.png', 'Ratings and Reviews - Write a Review Modal'],
     ['/images/projects/FECReviews.png', 'Ratings and Reviews Component for Atelier Retail Portal'],
-    ['/images/projects/FECReviewsAndRatings.png', 'Ratings and Reviews Component for Atelier Retail Portal'],
+    ['/images/projects/FECAppWithFourReviews.png', 'Ratings and Reviews Component'],
     ['/images/projects/FECReviewsAndRatings.png', 'Ratings and Reviews Component for Atelier Retail Portal'],
     ['/images/projects/FECWriteAReviewModal.png', 'Write a Review Modal'],
-    ['/images/projects/FECWriteAReviewModal.png', 'Write a Review Modal'],
+    ['/images/projects/FECAddAndMoreReviewsButtons.png', 'Ratings and Reviews Component Buttons'],
+    ['/images/projects/FECReviewsRatings.gif', 'Ratings and Reviews Component for Atelier Retail Portal'],
   ],
   [
     // Array format: [title, group name, job title, project link, project description]

@@ -4,16 +4,11 @@ const project = [
   // projects[1] -> Project Details
   [
     // Array format: [src, alt]
-    ['/images/interests/GlacierPoint.jpg', 'Glacier Point'],
-    ['/images/interests/YosemiteHammock.jpg', 'Hammocking in Yosemite'],
-    ['/images/interests/BackpackingFood.jpg', 'Enjoying backpacking food at Glacier Point'],
-    ['/images/interests/Canyon.jpeg', 'Canyon in Arizona'],
-    ['/images/interests/LakePowell.jpeg', 'Lake Powell'],
-    ['/images/interests/BobaStitch.jpeg', 'Boba Stitch'],
-    ['/images/projects/IMAGENAME.png', 'Alt Text for image'],
-    ['/images/projects/IMAGENAME2.png', 'Alt Text for image'],
-    ['/images/projects/IMAGENAME3.png', 'Alt Text for image'],
-    ['/images/projects/IMAGENAME4.png', 'Alt Text for image'],
+    ['/images/projects/MagicMemeTrendingMemesModal.png', 'Meme App'],
+    ['/images/projects/MagicMemeAnswerYes.png', 'Meme App'],
+    ['/images/projects/MagicMemeApp.png', 'Meme App'],
+    ['/images/projects/MagicMemeAnswerNo.png', 'Magic Meme App'],
+    ['/images/projects/MagicMemeAnswerNoo.png', 'Meme App'],
   ],
   [
     // Array format: [title, group name, job title, project link, project description]

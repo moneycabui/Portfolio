@@ -8,7 +8,7 @@ import sdcProject from './sdcProject.js';
 import styles from './Projects.css';
 
 const Projects = () => {
-  const listOfProjects = [mvpProject, blueOceanProject, fecProject, sdcProject];
+  const listOfProjects = [blueOceanProject, fecProject, mvpProject, sdcProject];
 
   const projectCards = listOfProjects.map((project, index) => (
     <ImagesGallery images={project} key={project + index}/>
