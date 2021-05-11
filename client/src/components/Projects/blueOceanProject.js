@@ -4,15 +4,16 @@ const project = [
   // projects[1] -> Project Details
   [
     // Array format: [src, alt]
-    ['/images/projects/FECReviews.png', 'Ratings and Reviews Component for Atelier Retail Portal'],
-    ['/images/projects/FECReviewsAndRatings.png', 'Ratings and Reviews Component for Atelier Retail Portal'],
-    ['/images/projects/FECReviewsAndRatings.png', 'Ratings and Reviews Component for Atelier Retail Portal'],
-    ['/images/projects/FECWriteAReviewModal.png', 'Write a Review Modal'],
-    ['/images/projects/FECWriteAReviewModal.png', 'Write a Review Modal'],
-    ['/images/projects/IMAGENAME.png', 'Alt Text for image'],
-    ['/images/projects/IMAGENAME2.png', 'Alt Text for image'],
-    ['/images/projects/IMAGENAME3.png', 'Alt Text for image'],
-    ['/images/projects/IMAGENAME4.png', 'Alt Text for image'],
+    ['/images/projects/StitchSaverSearchSuggestions.png', 'Search Suggestions Component for Stitch Saver'],
+    ['/images/projects/StitchSaverCommentsOnly.png', 'Comments Component for Stitch Saver'],
+    ['/images/projects/StitchSaverComments.png', 'Comments Component for Stitch Saver'],
+    ['/images/projects/StitchSaverLoginButtonOnHover.png', 'Hovered Login Button for Stitch Saver'],
+    ['/images/projects/StitchSaverLogoutButtonOnHover.png', 'Hovered Logout Button for Stitch Saver'],
+    ['/images/projects/StitchSaverHeader.png', 'Header Component for Stitch Saver'],
+    ['/images/projects/StitchSaverLogoutButton.png', 'Logout Button for Stitch Saver'],
+    ['/images/projects/StitchSaverLoginButton.png', 'Login Button for Stitch Saver'],
+    ['/images/projects/StitchSaverLoggedIn.png', 'Header Component for Stitch Saver When Logged In'],
+    ['/images/projects/StitchSaverLoggedOut.png', 'Header Component for Stitch Saver When Logged Out'],
   ],
   [
     // Array format: [title, group name, job title, project link, project description]
