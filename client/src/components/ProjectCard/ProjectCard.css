@@ -1,0 +1,75 @@
+.projectCards {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 500px;
+  grid-gap: 10px;
+  padding: 0;
+  margin: 0;
+  justify-items: center;
+  box-shadow: 2px 2px 7px 1px #b5b4b4;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+}
+
+.projectDetails {
+  position: relative;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  background-color: white;
+}
+
+.projectTitle {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.groupName,
+.jobTitle {
+  margin: 10px 0;
+}
+
+.jobTitle {
+  font-style: italic;
+}
+
+.projectDescription {
+  text-align: justify;
+  margin: 50px 70px 30px 70px;
+  font-size: 15px;
+  padding: 30px;
+  border: #b5b4b47c 1px solid;
+  outline: none;
+  border-radius: 7px;
+}
+
+.projectDescription:hover {
+  transition: 1s;
+  border: none;
+  box-shadow: 2px 2px 7px 1px #b5b4b4;
+  transform: scale(1.02, 1.02);
+}
+
+.ghIcon {
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  position: absolute;
+  cursor: pointer;
+  top: 7%;
+  left: 5%;
+  color: #787878;
+}
+
+.ghIcon:hover {
+  transition: 800ms;
+  color: pink;
+}

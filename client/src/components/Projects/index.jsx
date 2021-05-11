@@ -1,5 +1,6 @@
 import React from 'react';
 import ImagesGallery from '../ImagesGallery';
+import ProjectCard from '../ProjectCard';
 import ResumeDownload from '../ResumeDownload';
 import blueOceanProject from './blueOceanProject.js';
 import mvpProject from './mvpProject.js';
@@ -8,18 +9,25 @@ import sdcProject from './sdcProject.js';
 import styles from './Projects.css';
 
 const Projects = () => {
-  const listOfProjects = [blueOceanProject, fecProject, mvpProject, sdcProject];
+  const listOfProjectsWithImages = [blueOceanProject, fecProject, mvpProject];
+  const listOfProjects = [sdcProject];
 
-  const projectCards = listOfProjects.map((project, index) => (
-    <ImagesGallery images={project} key={project + index}/>
-  ))
+  const projectImageCards = listOfProjectsWithImages.map((project, index) => (
+    <ImagesGallery images={project} key={project + index} />
+  ));
+
+  const projectTextCards = listOfProjects.map((project, index) => {
+    <ProjectCard images={project} key={project + index} />
+  });
 
   return (
     <div className={styles.projects}>
       <h2 className={styles.projectsTitle}>- • Software Engineering Applications • -</h2>
       <div className={styles.gallery}>
         <ResumeDownload />
-        {projectCards}
+        {projectImageCards}
+        {projectTextCards}
+        <ProjectCard images={sdcProject} />
       </div>
     </div>
   );
