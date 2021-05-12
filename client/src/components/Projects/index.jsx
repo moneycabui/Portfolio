@@ -8,12 +8,20 @@ import fecProject from './fecProject.js';
 import sdcProject from './sdcProject.js';
 import styles from './Projects.css';
 
-const Projects = () => {
+const Projects = (props) => {
+  const { displayModal, openModal, closeModal } = props;
+
   const listOfProjectsWithImages = [blueOceanProject, fecProject, mvpProject];
   const listOfProjects = [sdcProject];
 
   const projectImageCards = listOfProjectsWithImages.map((project, index) => (
-    <ImagesGallery images={project} key={project + index} />
+    <ImagesGallery
+      images={project}
+      key={project + index}
+      displayModal={displayModal}
+      openModal={openModal}
+      closeModal={closeModal}
+    />
   ));
 
   const projectTextCards = listOfProjects.map((project, index) => {

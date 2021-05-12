@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Header';
+import Modal from '../Modal'
 import Footer from '../Footer';
 import AboutMe from '../AboutMe';
 import Projects from '../Projects';
@@ -16,21 +17,59 @@ import {
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      displayModal: false,
+      imageDisplayed: '',
+    };
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
+
+  openModal(event, imageDisplayed) {
+    console.log('openModal');
+    event.preventDefault();
+    this.setState({
+      displayModal: true,
+      imageDisplayed: imageDisplayed,
+    });
+    document.getElementById("contents").style.filter = "blur(8px)";
+    document.getElementById("contents").onclick = this.closeModal;
+  }
+
+  closeModal(event) {
+    console.log('closeModal');
+    event.preventDefault();
+    this.setState({ displayModal: false });
+    document.getElementById("contents").style.filter = "none";
   }
 
   render() {
+    const { displayModal, imageDisplayed } = this.state;
+
     return (
       <Router>
         <div className={styles.app}>
           <Header />
-          <Switch>
-            <Route path="/" component={Home} exact/>
-            <Route path="/AboutMe" component={AboutMe} exact/>
-            <Route path="/Projects" component={Projects} exact/>
-            <Route path="/Contact" component={Contact} exact/>
-            <Route path="/Resume" component={Resume} exact/>
-            <Route path="*" render={() => (<div>Page does not exist.</div>)} />
-          </Switch>
+          {displayModal &&
+            <Modal imageDisplayed={imageDisplayed} closeModal={this.closeModal} />
+          }
+          <div id="contents">
+            <Switch>
+              <Route path="/" component={Home} exact/>
+              <Route path="/AboutMe" component={AboutMe} exact/>
+              <Route path="/Projects" exact>
+                <Projects
+                  displayModal={displayModal}
+                  openModal={this.openModal}
+                  closeModal={this.closeModal}
+                />
+              </Route>
+              {/* <Route path="/Projects" component={Projects} exact/> */}
+              <Route path="/Contact" component={Contact} exact/>
+              <Route path="/Resume" component={Resume} exact/>
+              <Route path="*" render={() => (<div>Page does not exist.</div>)} />
+            </Switch>
+          </div>
           <Footer />
         </div>
       </Router>

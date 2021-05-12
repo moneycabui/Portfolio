@@ -8,7 +8,7 @@ class ImagesGallery extends React.Component {
   }
 
   render () {
-    const { images } = this.props;
+    const { images, displayModal, openModal } = this.props;
     const imageGrid = images[0].slice(0, 5);
     const projectDetails = images[1];
     const projectLink = images[1][3] || 'https://github.com/moneycabui/Portfolio';
@@ -20,6 +20,7 @@ class ImagesGallery extends React.Component {
           id={image + index}
           src={image[0]}
           alt={image[1]}
+          onClick={(event) => openModal(event, image)}
         />
       </div>
     ))

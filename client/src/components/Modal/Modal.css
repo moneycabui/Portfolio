@@ -1,0 +1,39 @@
+.modal {
+  display: flex;
+  position: fixed;
+  box-sizing: border-box;
+  object-fit: contain;
+  border-radius: 10px;
+  padding: 30px;
+  margin: auto;
+  z-index: 9999999;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, .75);
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  animation: all 3ms ease-out;
+}
+
+.closeButton {
+  position: absolute;
+  left: 95%;
+  top: 3%;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  opacity: 0.9;
+}
+
+.modalImage {
+  box-sizing: border-box;
+  object-fit: contain;
+  height: 100%;
+  border-radius: 5px;
+}

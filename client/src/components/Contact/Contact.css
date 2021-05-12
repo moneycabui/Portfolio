@@ -1,7 +1,7 @@
 .contact {
   display: grid;
   grid-template-columns: 100%;
-  margin: 15px 30px;
+  margin: 30px;
   margin-top: 80px;
   justify-content: center;
   justify-items: center;
