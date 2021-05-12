@@ -4,7 +4,6 @@
   "description": "Personal Portfolio",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "react-dev": "webpack -w",
     "start": "nodemon server/server.js"
   },
@@ -20,6 +19,7 @@
   "homepage": "https://github.com/moneycabui/Portfolio#readme",
   "dependencies": {
     "axios": "^0.21.1",
+    "emailjs-com": "^2.6.4",
     "express": "^4.17.1",
     "giphy-api": "^2.0.1",
     "identity-obj-proxy": "^3.0.0",

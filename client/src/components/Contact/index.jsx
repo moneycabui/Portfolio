@@ -1,4 +1,8 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
+import serviceId from '../../../../emailjsServiceID.js';
+import templateId from '../../../../emailjsTemplateId.js';
+import userId from '../../../../emailjsUserId.js';
 import ContactAndSocialIcons from '../ContactAndSocialIcons';
 import styles from './Contact.css';
 
@@ -9,6 +13,8 @@ class Contact extends React.Component {
       nameInput: '',
       emailInput: '',
       phoneInput: '',
+      titleInput: '',
+      companyInput: '',
       subjectInput: '',
       messageInput: '',
       charCount: 0,
@@ -18,6 +24,7 @@ class Contact extends React.Component {
     this.handlePhoneInput = this.handlePhoneInput.bind(this);
     this.handleMessageInput = this.handleMessageInput.bind(this);
     this.handleMessageSend = this.handleMessageSend.bind(this);
+    this.sentFormReset = this.sentFormReset.bind(this);
   }
 
   handleChange(event) {
@@ -47,6 +54,38 @@ class Contact extends React.Component {
   handleMessageSend(event) {
     event.preventDefault();
     console.log('Sent: ', this.state);
+    const {
+      nameInput,
+      emailInput,
+      titleInput,
+      companyInput,
+      phoneInput,
+      subjectInput,
+      messageInput
+    } = this.state;
+
+    let templateParams = {
+      fromName: nameInput,
+      fromEmail: emailInput,
+      toName: 'Monica Bui',
+      title: titleInput,
+      company: companyInput,
+      phone: phoneInput,
+      subject: subjectInput,
+      message: messageInput,
+    }
+    emailjs.send(serviceId, templateId, templateParams, userId)
+      .then((result) => {
+        this.sentFormReset('sent');
+        console.log(result.text);
+      })
+      .catch((error) => {
+        this.sentFormReset('failed');
+        console.log(error.text);
+      })
+  }
+
+  sentFormReset(sentStatus) {
     this.setState({
       nameInput: '',
       titleInput: '',
@@ -56,7 +95,7 @@ class Contact extends React.Component {
       subjectInput: '',
       messageInput: '',
       charCount: 0,
-      sentStatus: 'sent',
+      sentStatus: `${sentStatus}`
     });
   }
 
@@ -149,7 +188,7 @@ class Contact extends React.Component {
               maxLength="12"
             />
             <small className={styles.note}>Optional Input | Required format: ###-###-####</small>
-            <label htmlFor="subjectInput" className={styles.inputText}>Subject</label>
+            <label htmlFor="subjectInput" className={styles.inputText}>Subject*</label>
             <input
               placeholder="Example: Great page!"
               name="subjectInput"
@@ -157,6 +196,7 @@ class Contact extends React.Component {
               onChange={this.handleChange}
               className={styles.subjectInput}
               maxLength="200"
+              required
             />
             <label htmlFor="messageInput" className={styles.inputText}>Message*</label>
             <textarea

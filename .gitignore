@@ -103,8 +103,12 @@ dist
 # TernJS port file
 .tern-port
 
-# Database
+# Authorization and security
 authorization.js
+emailjsServiceID.js
+emailjsTemplateId.js
+emailjsUserId.js
+
 
 # Dist folder and Bundle
 dist/
