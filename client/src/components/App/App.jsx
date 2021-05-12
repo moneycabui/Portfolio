@@ -31,16 +31,14 @@ class App extends React.Component {
       displayModal: true,
       imageDisplayed: imageDisplayed,
     });
-    document.getElementById("header").style.filter = "blur(8px)";
-    document.getElementById("header").onclick = this.closeModal;
     document.getElementById("contents").style.filter = "blur(8px)";
     document.getElementById("contents").onclick = this.closeModal;
+    document.getElementById("header").onclick = this.closeModal;
   }
 
   closeModal(event) {
     event.preventDefault();
     this.setState({ displayModal: false });
-    document.getElementById("header").style.filter = "none";
     document.getElementById("contents").style.filter = "none";
   }
 
