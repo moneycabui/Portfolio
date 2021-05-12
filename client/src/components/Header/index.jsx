@@ -14,7 +14,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <nav className={styles.header}>
+      <nav className={styles.header} id="header">
         <Link to="/">
           {/* <img className={styles.name} src="/images/HeaderName.png" alt="Monica Bui"/> */}
           <img className={styles.headerImage} src="/images/ProfilePhoto.jpg" alt="Monica Bui" />

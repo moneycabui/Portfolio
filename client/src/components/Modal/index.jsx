@@ -1,5 +1,5 @@
 import React from 'react';
-import { CgClose } from 'react-icons/cg';
+import { RiCloseCircleFill } from 'react-icons/ri';
 import styles from './Modal.css'
 
 class Modal extends React.Component {
@@ -16,7 +16,7 @@ class Modal extends React.Component {
     return (
       <div className={styles.modalContainer}>
         <div className={styles.modal}>
-          <CgClose className={styles.closeButton} onClick={closeModal} />
+          <RiCloseCircleFill className={styles.closeButton} onClick={closeModal} />
           <img
             className={styles.modalImage}
             src={imageDisplayed[0]}
