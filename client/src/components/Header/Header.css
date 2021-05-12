@@ -5,7 +5,7 @@
   position: fixed;
   top: 0px;
   height: 65px;
-  grid-template-columns: 100px auto 500px;
+  grid-template-columns: 100px auto 200px;
   background-color: white;
   opacity: 0.975;
   z-index: 15;
@@ -16,24 +16,6 @@
 .header:hover,
 .header:focus {
   box-shadow: -10px 2px 7px 2px #BFBFBF;
-}
-
-.name {
-  position: relative;
-  font-family: Dancing Script;
-  font-size: 50px;
-  font-weight: 700;
-  top: 30px;
-  color: #0F3F8F;
-  padding: 0px 20px;
-  text-decoration: none;
-  border: none;
-  height: 50px;
-  width: 200px;
-  justify-self: start;
-  align-content: center;
-  align-self: center;
-  cursor: pointer;
 }
 
 .headerImage {
@@ -74,7 +56,7 @@
   position: relative;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-decoration: none;
-  color: #575757;
+  color: #919191;
   border:none;
   justify-self: start;
   align-content: center;
@@ -92,7 +74,7 @@
 .projectsLink:hover,
 .resumeLink:hover,
 .contactLink:hover {
-  transition: 800ms;
+  transition: 1s;
   border-bottom: solid 3px;
   color: black;
 }
@@ -100,48 +82,64 @@
 .iconContainer {
   display: flex;
   position: relative;
-  top: 25px;
+  top: 22.5px;
   margin: 0 20px;
   align-content: center;
   justify-content: flex-end;
   height: 100px;
 }
 
-.resumeIcon,
-.downloadIcon {
+.downloadIcon,
+.resumeIcon {
   position: relative;
-  padding: 0 10px;
-  color: #575757;
+  padding: 0 3px;
+  color: #BCA9E8;
   cursor: pointer;
   height: 50px;
   border-bottom: white solid 5px;
   font-size: 30px;
 }
 
-.downloadIcon {
-  font-size: 22px;
-}
-
-.resumeIcon:hover,
-.resumeIcon:focus,
 .downloadIcon:hover,
-.downloadIcon:focus {
-  transition: 800ms;
-  border-bottom: solid 5px;
+.downloadIcon:focus,
+.resumeIcon:hover,
+.resumeIcon:focus {
+  transition: 1s;
+  color: #575757;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 845px) {
   .header {
-    display: none;
-  }
-
-  .header {
-    display: grid;
     grid-template-columns: 100px auto auto;
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 755px) {
+  .homeLink,
+  .aboutMeLink,
+  .projectsLink,
+  .resumeLink,
+  .contactLink {
+    margin: 30px 0;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .homeLink,
+  .aboutMeLink,
+  .projectsLink,
+  .resumeLink,
+  .contactLink {
+    padding: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  .downloadIcon,
+  .resumeIcon {
+    font-size: 25px;
+  }
+
   .homeLink,
   .aboutMeLink,
   .projectsLink,
@@ -149,72 +147,20 @@
   .contactLink {
     font-size: 12px;
   }
-
-  .emailIcon,
-  .liIcon,
-  .ghIcon,
-  .igIcon,
-  .fbIcon {
-    font-size: 25px;
-  }
-
-  .iconContainer {
-    justify-content: space-between;
-  }
 }
 
-@media screen and (max-width: 850px) {
-  .homeLink,
-  .aboutMeLink,
-  .projectsLink,
-  .resumeLink,
-  .contactLink {
-    padding: 10px 5px;
-    margin: 30px 5px;
-  }
-
-  .emailIcon,
-  .liIcon,
-  .ghIcon,
-  .igIcon,
-  .fbIcon {
+@media screen and (max-width: 545px) {
+  .downloadIcon,
+  .resumeIcon {
     font-size: 20px;
   }
-}
 
-@media screen and (max-width: 695px) {
   .homeLink,
   .aboutMeLink,
   .projectsLink,
   .resumeLink,
   .contactLink {
-    font-size: 10px;
-    padding: 10px 3px;
-    margin: 30px 3px;
-  }
-
-  .emailIcon,
-  .liIcon,
-  .ghIcon,
-  .igIcon,
-  .fbIcon {
-    padding: auto 5px;
-  }
-}
-
-@media screen and (max-width: 620px) {
-  .emailIcon,
-  .liIcon,
-  .ghIcon,
-  .igIcon,
-  .fbIcon {
-    padding: auto 2px;
-  }
-}
-
-@media screen and (max-width: 570px) {
-  .aboutMeLink {
-    display: none;
+    font-size: 11px;
   }
 }
 
@@ -224,49 +170,52 @@
   }
 }
 
-@media screen and (max-width: 490px) {
-  .projectsLink {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  .contactLink {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 470px) {
   .resumeLink {
     display: none;
   }
 }
 
-@media screen and (max-width: 325px) {
-  .header {
+@media screen and (max-width: 410px) {
+  .aboutMeLink {
     display: none;
-  }
-
-  .header {
-    display: grid;
-    grid-template-columns: auto auto 100%;
-  }
-
-  .headerImage {
-    display: none;
-  }
-
-  .iconContainer {
-    width: 100%;
-    position: relative;
-    justify-self: center;
   }
 }
 
-@media screen and (max-width: 230px) {
-  .header,
+@media screen and (max-width: 325px) {
+  .projectsLink {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  .projectsLink {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 255px) {
   .links,
-  .iconContainer {
+  .contactLink {
+    display: none;
+  }
+
+  .downloadIcon,
+  .resumeIcon {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 205px) {
+  .downloadIcon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 169px) {
+  .header,
+  .iconContainer,
+  .resumeIcon {
     display: none;
   }
 
@@ -282,8 +231,4 @@
     position: relative;
     justify-content: space-between;
   }
-
-  .iconContainer {
-    display: none;
-  }
-  }
+}

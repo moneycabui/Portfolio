@@ -33,7 +33,6 @@ class App extends React.Component {
     });
     document.getElementById("contents").style.filter = "blur(8px)";
     document.getElementById("contents").onclick = this.closeModal;
-    document.getElementById("header").onclick = this.closeModal;
   }
 
   closeModal(event) {
@@ -48,7 +47,7 @@ class App extends React.Component {
     return (
       <Router>
         <div className={styles.app}>
-          <Header />
+          <Header closeModal={this.closeModal} />
           {displayModal &&
             <Modal imageDisplayed={imageDisplayed} closeModal={this.closeModal} />
           }
