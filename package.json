@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/moneycabui/Portfolio#readme",
   "dependencies": {
-    "axios": "^0.21.1",
     "emailjs-com": "^2.6.4",
     "express": "^4.17.1",
     "giphy-api": "^2.0.1",
