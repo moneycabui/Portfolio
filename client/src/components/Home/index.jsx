@@ -1,14 +1,10 @@
 import React from 'react';
 import ImagesCarousel from '../ImagesCarousel';
-import AboutMe from '../AboutMe';
-import Projects from '../Projects';
-import ResumeDownload from '../ResumeDownload';
-import Contact from '../Contact';
 import images from './images.js';
 import styles from './Home.css';
 import { Link } from 'react-router-dom';
 
-const Home = () => {
+const Home = ({ openModal }) => {
   return (
     <div>
       <div className={styles.hello}>Hello</div>
@@ -22,7 +18,7 @@ const Home = () => {
       <section className={styles.interests}>
         <h2 className={styles.aboutTitle}>- • Preview of My Life • -</h2>
         <div className={styles.carousel}>
-          <ImagesCarousel images={images} />
+          <ImagesCarousel images={images} openModal={openModal} />
         </div>
       </section>
     </div>

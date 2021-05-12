@@ -46,7 +46,7 @@ class ImagesCarousel extends React.Component {
 
   render () {
     const { showLeftArrow, showRightArrow } = this.state;
-    const { images } = this.props;
+    const { images, openModal } = this.props;
     const scrollLength = 375; // Future implementation: pass down scroll length
     const imagesRender = images.map((image, index) => (
       <img
@@ -55,6 +55,7 @@ class ImagesCarousel extends React.Component {
         src={image[0]}
         alt={image[1]}
         key={index + image[1]}
+        onClick={(event) => openModal(event, image)}
       />
     ))
 

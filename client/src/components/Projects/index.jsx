@@ -8,9 +8,7 @@ import fecProject from './fecProject.js';
 import sdcProject from './sdcProject.js';
 import styles from './Projects.css';
 
-const Projects = (props) => {
-  const { displayModal, openModal, closeModal } = props;
-
+const Projects = ({ openModal }) => {
   const listOfProjectsWithImages = [blueOceanProject, fecProject, mvpProject];
   const listOfProjects = [sdcProject];
 
@@ -18,9 +16,7 @@ const Projects = (props) => {
     <ImagesGallery
       images={project}
       key={project + index}
-      displayModal={displayModal}
       openModal={openModal}
-      closeModal={closeModal}
     />
   ));
 

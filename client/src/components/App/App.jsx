@@ -26,7 +26,6 @@ class App extends React.Component {
   }
 
   openModal(event, imageDisplayed) {
-    console.log('openModal');
     event.preventDefault();
     this.setState({
       displayModal: true,
@@ -37,7 +36,6 @@ class App extends React.Component {
   }
 
   closeModal(event) {
-    console.log('closeModal');
     event.preventDefault();
     this.setState({ displayModal: false });
     document.getElementById("contents").style.filter = "none";
@@ -55,13 +53,15 @@ class App extends React.Component {
           }
           <div id="contents">
             <Switch>
-              <Route path="/" component={Home} exact/>
+              <Route path="/"exact>
+                <Home
+                  openModal={this.openModal}
+                />
+              </Route>
               <Route path="/AboutMe" component={AboutMe} exact/>
               <Route path="/Projects" exact>
                 <Projects
-                  displayModal={displayModal}
                   openModal={this.openModal}
-                  closeModal={this.closeModal}
                 />
               </Route>
               {/* <Route path="/Projects" component={Projects} exact/> */}
