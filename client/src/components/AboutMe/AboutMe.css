@@ -1,7 +1,7 @@
 .intro {
   display: grid;
   grid-template-columns: 95%;
-  margin: 100px 30px 20px 30px;
+  margin: 100px 100px 20px 100px;
   justify-content: center;
   justify-items: center;
 }
@@ -37,6 +37,8 @@ p,
   width: 100px;
   height: 100px;
   box-shadow: 2px 2px 5px 1px #8F8F8F;
+  justify-self: center;
+  align-self: center;
 }
 
 .hi {
@@ -56,21 +58,36 @@ p,
   width: 500px;
 }
 
+.icons {
+  margin-top: 30px;
+  width: 200%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  justify-items: space-around;
+}
+
 .aboutTitle,
 .contactTitle {
   justify-self: center;
   align-self: center;
   margin: 30px auto 10px auto;
+  width: 100%;
+  text-align: center;
 }
 
 .bodyText {
   margin-top: 10px;
   transition: 500ms;
+  width: 100%;
+  text-align: center;
 }
 
 .contactText {
   cursor: pointer;
   transition: 500ms;
+  width: 100%;
+  text-align: center;
 }
 
 .bodyText:hover,
@@ -106,4 +123,116 @@ p,
 .contactButton:hover,
 .contactButton:focus {
   background-position: right;
+}
+
+@media screen and (max-width: 1430px) {
+  .intro {
+    grid-template-columns: 85%;
+  }
+
+  .profileWrapper {
+    grid-template-columns: 75px auto;
+    margin: 30px auto 20px auto;
+    height: 75px;
+    column-gap: 50px;
+  }
+
+  .profilePhoto {
+    width: 75px;
+    height: 75px;
+  }
+
+  .name {
+    height: 75px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .intro {
+    grid-template-columns: 50%;
+    margin: 100px 200px 20px 200px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .intro {
+    grid-template-columns: 20%;
+    margin: 100px 500px 20px 500px;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  .intro {
+    grid-template-columns: auto;
+    margin: 100px 300px 20px 300px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .profileWrapper {
+    grid-template-columns: 50px auto;
+    margin: 30px auto 20px auto;
+    height: 50px;
+    column-gap: 50px;
+  }
+
+  .profilePhoto {
+    width: 50px;
+    height: 50px;
+  }
+
+  .name {
+    height: 50px;
+    width: 250px;
+  }
+
+  .icons {
+    width: 155%;
+    justify-items: space-between;
+    margin: auto 75px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .intro {
+    margin: 100px 100px 20px 100px;
+  }
+
+  .profileWrapper {
+    margin: 0 auto 30px auto;
+    grid-template-columns: 50px;
+  }
+
+  .profilePhoto {
+    width: 50px;
+    height: 50px;
+    justify-self: center;
+  }
+
+  .hi,
+  .name,
+  .icons,
+  .contactIcon {
+    display: none;
+  }
+
+  .contactText {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .profileWrapper {
+    display: none;
+  }
+
+  .profilePhoto {
+    display: none;
+  }
+
+  .contactLink,
+  .contactButton {
+    display: none;
+  }
 }
