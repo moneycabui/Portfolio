@@ -2,7 +2,6 @@ import React from 'react';
 import ImagesCarousel from '../ImagesCarousel';
 import images from './images.js';
 import styles from './Home.css';
-import { Link } from 'react-router-dom';
 
 const Home = ({ openModal }) => {
   return (

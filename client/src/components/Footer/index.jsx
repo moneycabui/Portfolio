@@ -4,7 +4,7 @@ import { IoMailSharp } from 'react-icons/io5';
 import styles from './Footer.css';
 import { Link } from 'react-router-dom';
 
-const Footer = (props) => {
+const Footer = () => {
   return (
     <div>
       <div className={styles.emailFooter}>
