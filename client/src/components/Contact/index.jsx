@@ -124,7 +124,9 @@ class Contact extends React.Component {
     return (
       <div className={styles.contact}>
         <img src="/images/ContactTitle.png" alt="Contact" className={styles.contactTitle} />
-        <ContactAndSocialIcons />
+        <div className={styles.socialIcons}>
+          <ContactAndSocialIcons />
+        </div>
 
         <div className={styles.messageContainer}>
           <img className={styles.emailImage} src="/images/EmailIcon.jpeg" alt="Message Icon" />

@@ -13,6 +13,14 @@
   margin: 20px;
 }
 
+.socialIcons {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  justify-items: space-between;
+}
+
 .messageContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -281,6 +289,7 @@
   .messageContainer {
     grid-template-columns: 1fr;
     justify-items: center;
+    justify-content: center;
     column-gap: 0;
   }
 
@@ -348,6 +357,7 @@
 }
 
 @media screen and (max-width: 390px) {
+  .socialIcons,
   .emailImage,
   .messageForm {
     display: none;
@@ -384,18 +394,53 @@
   }
 }
 
-
-/* Media query for smaller/older mobile screens  - iPhone 5/SE, Galaxy S5, and Moto G4 models*/
+/* Media query for smaller/older mobile screens  - iPhone 5/SE/6/7/8/Plus, Galaxy S5, and Moto G4 models, Pixel 2 */
 @media only screen and (max-device-width: 415px) and (min-device-height: 560px) {
+  .contact {
+    margin-top: 150px;
+  }
 
+  .messageContainer {
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 0;
+    row-gap: 30px;
+  }
+
+  .socialIcons {
+    margin-top: 50px;
+  }
+
+  .emailImage,
+  .messageForm {
+    justify-self: center;
+  }
+
+  .messageForm {
+    width: 70%;
+  }
 }
 
-/* Media query for mobile screens - iPhone 6/7/8/Plus, Galaxy Fold, Pixel 2 */
-@media only screen and (max-device-width: 415px) and (min-device-height: 652px) {
+/* Media query for mobile screens - iPhone X, Pixel 2 XL, Galaxy Fold */
+@media only screen and (max-device-width: 412px) and (min-device-height: 800px)  {
+  .nameInput,
+  .titleInput,
+  .companyInput,
+  .emailInput,
+  .phoneInput,
+  .subjectInput,
+  .messageInput {
+    margin-bottom: 30px;
+  }
 
-}
+  .phoneInput,
+  .messageInput {
+    margin-bottom: 0px;
+  }
 
-/* Media query for mobile screens - iPhone X, Pixel 2 XL */
-@media only screen and (max-device-width: 400px) and (min-device-height: 800px)  {
-
+  .note {
+    margin-bottom: 30px;
+  }
 }

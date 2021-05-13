@@ -323,7 +323,7 @@ iPad, Surface:
 }
 
 /* Media query for mobile screens - iPhone X, Pixel 2 XL */
-@media only screen and (max-device-width: 400px) and (min-device-height: 800px)  {
+@media only screen and (max-device-width: 412px) and (min-device-height: 800px)  {
   .intro {
     margin-top: 200px;
   }
