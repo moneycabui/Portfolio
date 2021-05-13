@@ -95,3 +95,54 @@
 .lastImage {
   margin: 0;
 }
+
+/* Media query for smaller/older mobile screens  - iPhone 5/SE, Galaxy S5, and Moto G4 models*/
+@media only screen and (max-device-width: 415px) and (min-device-height: 560px) {
+  .imageContainer,
+  .image {
+    height: 800px;
+  }
+
+  .previousButton,
+  .nextButton {
+    height: 790px;
+  }
+
+  .carousel {
+    margin-top: 150px;
+  }
+}
+
+/* Media query for mobile screens - iPhone 6/7/8/Plus, Galaxy Fold, Pixel 2 */
+@media only screen and (max-device-width: 415px) and (min-device-height: 652px) {
+  .imageContainer,
+  .image {
+    height: 900px;
+  }
+
+  .previousButton,
+  .nextButton {
+    height: 890px;
+  }
+
+  .carousel {
+    margin-top: 100px;
+  }
+}
+
+/* Media query for mobile screens - iPhone X, Pixel 2 XL */
+@media only screen and (max-device-width: 412px) and (min-device-height: 800px)  {
+  .imageContainer,
+  .image {
+    height: 1000px;
+  }
+
+  .previousButton,
+  .nextButton {
+    height: 890px;
+  }
+
+  .carousel {
+    margin-top: 150px;
+  }
+}

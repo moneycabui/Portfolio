@@ -184,3 +184,12 @@ p {
     width: 100px;
   }
 }
+
+
+
+/* Media query for mobile screens */
+@media only screen and (max-device-width: 415px) and (min-device-height: 560px) {
+  .intro {
+    margin-top: 150px;;
+  }
+}
