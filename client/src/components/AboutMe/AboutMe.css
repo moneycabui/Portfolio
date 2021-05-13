@@ -1,5 +1,6 @@
 .intro {
   display: grid;
+  position: relative;
   grid-template-columns: 95%;
   margin: 100px 100px 20px 100px;
   justify-content: center;
@@ -84,6 +85,7 @@ p,
 }
 
 .contactText {
+  margin-top: 10px;
   cursor: pointer;
   transition: 500ms;
   width: 100%;
@@ -234,5 +236,81 @@ p,
   .contactLink,
   .contactButton {
     display: none;
+  }
+}
+
+/*
+Common mobile screen sizes:
+  Width: 280, 320, 375, 360, 411, 414
+  Height: 568, 640, 653, 667, 731, 736, 812, 823
+iPad, Surface:
+  W: 768, 1024, 540
+  H: 1024, 1366, 720
+*/
+
+/* Media query for smaller/older mobile screens  - iPhone 5/SE, Galaxy S5, and Moto G4 models*/
+@media only screen and (max-device-width: 415px) and (min-device-height: 560px) {
+  .intro {
+    margin-top: 150px;
+    grid-template-columns: 200px;
+    padding: auto 100px;
+  }
+
+  .profileWrapper {
+    display: grid;
+    grid-template-columns: 75px auto;
+    margin: 30px auto 20px auto;
+    height: 75px;
+    column-gap: 20px;
+  }
+
+  .profilePhoto {
+    width: 75px;
+    height: 75px;
+  }
+
+  .name {
+    height: 75px;
+    width: 350px;
+  }
+
+  .aboutTitle,
+  .contactTitle {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;;
+  }
+
+  .contactIcon,
+  .bodyText,
+  .contactText {
+    margin: 10px auto;
+    font-size: 20px
+  }
+
+  .contactIcon {
+    margin: 0 10px;
+  }
+}
+
+/* Media query for mobile screens - iPhone 6/7/8/Plus, Galaxy Fold, Pixel 2/2 XL */
+@media only screen and (max-device-width: 415px) and (min-device-height: 652px) {
+  .aboutTitle,
+  .contactTitle {
+    font-size: 20px;
+    margin-top: 125px;
+    margin-bottom: 30px;
+  }
+
+  .contactButton {
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+}
+
+/* Media query for mobile screens - iPhone X */
+@media only screen and (max-device-width: 400px) and (min-device-height: 800px)  {
+  .intro {
+    grid-template-columns: 700px;
   }
 }
