@@ -7,11 +7,15 @@
   row-gap: 20px;
 }
 
+.resumePlaceholder {
+  display: none;
+}
+
 .resumeWrapper {
   display: grid;
   grid-template-columns: 100px auto;
   column-gap: 30px;
-  margin: 100px 20px 100px 20px;
+  margin: 100px 20px;
   justify-content: center;
   justify-items: center;
   font-size: 11px;
@@ -36,6 +40,7 @@ li {
   margin: 0;
   box-shadow: 2px 2px 7px 2px #EDEDED;
   background-color: white;
+  padding: 10px;
 }
 
 .paper {
@@ -162,4 +167,88 @@ h3 {
 .techKnowledge,
 .skills {
   font-size: 11.5px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1150px) {
+  .resumeWrapper {
+    transform: scale(1, 1);
+    column-gap: 0px;
+    margin: 50px 20px;
+  }
+
+  .title {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .resumeWrapper {
+    transform: scale(0.8, 0.8);
+    margin: 0px 20px;
+    margin-top: -50px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .resumeWrapper {
+    transform: scale(0.7, 0.7);
+    margin-top: -100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .resumeWrapper {
+    transform: scale(0.6, 0.6);
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .resumeWrapper {
+    transform: scale(0.5, 0.5);
+    margin-top: -200px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .resumeWrapper {
+    display: none;
+  }
+
+  .resumePlaceholder {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 100px 20px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .openIcon {
+    font-size: 100px;
+    color: #BCA9E8;
+    cursor: pointer;
+    margin: 30px;
+  }
+
+  .openIcon:hover {
+    transition: 2s;
+    color: #575757;
+  }
+}
+
+/* Media query for smaller/older mobile screens  - iPhone 5/SE, Galaxy S5, and Moto G4 models*/
+@media only screen and (max-device-width: 415px) and (min-device-height: 560px) {
+
+}
+
+/* Media query for mobile screens - iPhone 6/7/8/Plus, Galaxy Fold, Pixel 2 */
+@media only screen and (max-device-width: 415px) and (min-device-height: 652px) {
+
+}
+
+/* Media query for mobile screens - iPhone X, Pixel 2 XL */
+@media only screen and (max-device-width: 412px) and (min-device-height: 800px)  {
+
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import ResumeDownload from '../ResumeDownload';
-import { FaFileDownload } from 'react-icons/fa'
+import { IoOpenOutline } from 'react-icons/io5';
 import styles from './Resume.css';
 
 const Resume = () => {
@@ -8,6 +8,14 @@ const Resume = () => {
     <div>
       <div className={styles.header}>
         <ResumeDownload />
+      </div>
+      <div className={styles.resumePlaceholder}>
+        <IoOpenOutline
+          title="View Resume PDF"
+          onClick={() => window.open('/documents/MonicaBuiResume.pdf')}
+          className={styles.openIcon}
+        />
+        <small>Click here to open Resume PDF.</small>
       </div>
       <div className={styles.resumeWrapper}>
         <p className={styles.title}>Monica Bui Resume</p>
