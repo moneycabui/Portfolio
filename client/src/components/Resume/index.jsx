@@ -1,6 +1,6 @@
 import React from 'react';
 import ResumeDownload from '../ResumeDownload';
-import { IoOpenOutline } from 'react-icons/io5';
+import { IoDownloadOutline, IoOpenOutline } from 'react-icons/io5';
 import styles from './Resume.css';
 
 const Resume = () => {
@@ -8,14 +8,6 @@ const Resume = () => {
     <div>
       <div className={styles.header}>
         <ResumeDownload />
-      </div>
-      <div className={styles.resumePlaceholder}>
-        <IoOpenOutline
-          title="View Resume PDF"
-          onClick={() => window.open('/documents/MonicaBuiResume.pdf')}
-          className={styles.openIcon}
-        />
-        <small>Click here to open Resume PDF.</small>
       </div>
       <div className={styles.resumeWrapper}>
         <p className={styles.title}>Monica Bui Resume</p>
@@ -122,6 +114,24 @@ const Resume = () => {
               </ul>
             </ul>
           </div>
+        </div>
+      </div>
+      <div className={styles.resumeContainer}>
+        <div className={styles.download}>
+          <a href="/documents/MonicaBuiResume.pdf" download="Monica Bui Resume" className={styles.download}>
+            <IoDownloadOutline
+              title="Download Resume PDF"
+              className={styles.downloadIcon}
+            />
+            <small className={styles.download}>Click here to download Resume PDF.</small>
+          </a>
+        </div>
+        <div className={styles.resumePlaceholder} onClick={() => window.open('/documents/MonicaBuiResume.pdf')}>
+          <IoOpenOutline
+            title="View Resume PDF"
+            className={styles.openIcon}
+          />
+          <small>Click here to open Resume PDF.</small>
         </div>
       </div>
     </div>
