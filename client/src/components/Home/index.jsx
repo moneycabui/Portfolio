@@ -1,5 +1,7 @@
 import React from 'react';
+import { IoDownloadOutline, IoOpenOutline } from 'react-icons/io5';
 import ImagesCarousel from '../ImagesCarousel';
+import ResumeIcons from '../ResumeIcons';
 import images from './images.js';
 import styles from './Home.css';
 
@@ -19,6 +21,9 @@ const Home = ({ openModal }) => {
         <div className={styles.carousel}>
           <ImagesCarousel images={images} openModal={openModal} />
         </div>
+      </section>
+      <section className={styles.resume}>
+        <ResumeIcons />
       </section>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import ResumeDownload from '../ResumeDownload';
-import { IoDownloadOutline, IoOpenOutline } from 'react-icons/io5';
+import ResumeIcons from '../ResumeIcons';
 import styles from './Resume.css';
 
 const Resume = () => {
@@ -117,22 +117,7 @@ const Resume = () => {
         </div>
       </div>
       <div className={styles.resumeContainer}>
-        <div className={styles.download}>
-          <a href="/documents/MonicaBuiResume.pdf" download="Monica Bui Resume" className={styles.download}>
-            <IoDownloadOutline
-              title="Download Resume PDF"
-              className={styles.downloadIcon}
-            />
-            <small className={styles.download}>Click here to download Resume PDF.</small>
-          </a>
-        </div>
-        <div className={styles.resumePlaceholder} onClick={() => window.open('/documents/MonicaBuiResume.pdf')}>
-          <IoOpenOutline
-            title="View Resume PDF"
-            className={styles.openIcon}
-          />
-          <small>Click here to open Resume PDF.</small>
-        </div>
+        <ResumeIcons />
       </div>
     </div>
   );

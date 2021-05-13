@@ -7,8 +7,7 @@
   row-gap: 20px;
 }
 
-.resumePlaceholder,
-.download {
+.resumeContainer {
   display: none;
 }
 
@@ -218,7 +217,7 @@ h3 {
     display: none;
   }
 
-  .resumePlaceholder {
+  .resumeContainer {
     display: grid;
     grid-template-columns: auto;
     margin: 100px 20px;
@@ -226,106 +225,50 @@ h3 {
     justify-items: center;
     text-align: center;
   }
-  .openIcon {
-    font-size: 100px;
-    color: #BCA9E8;
-    cursor: pointer;
-    margin: 30px;
-  }
-
-  .openIcon:hover {
-    transition: 2s;
-    color: #575757;
-  }
 }
 
 /* Media query for mobile screens */
 @media only screen and (max-device-width: 415px) and (min-device-height: 560px) {
   .resumeContainer {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 30px;
-  }
-
-  .download,
-  .resumePlaceholder {
-    color: #666666;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    display: grid;
+    grid-template-columns: auto;
+    margin: 100px 20px;
     justify-content: center;
     justify-items: center;
     text-align: center;
-    text-decoration: none;
-  }
-
-  .download {
-    justify-self: end;
-  }
-
-  .resumePlaceholder {
-    justify-self: start;
-  }
-
-
-  .openIcon,
-  .downloadIcon {
-    font-size: 100px;
-    color: #BCA9E8;
-    cursor: pointer;
-    margin: 30px;
-  }
-
-  .openIcon:hover,
-  .downloadIcon:hover {
-    transition: 2s;
-    color: #575757;
   }
 }
 
 /* Media queries for some common tablet screens */
-@media only screen and (max-device-width: 1024px) and (min-device-height: 720px) {
+@media only screen and (max-device-width: 1024px) and (min-device-height: 815px) {
+  .resumeWrapper {
+    margin-top: -55px;
+  }
+
+  .resumeContainer {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0 20px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin-top: -50px;
+  }
+}
+
+/* Media query for surface duo */
+@media only screen and (min-device-width: 500px) and (min-device-height: 700px) and (max-device-width: 600px) and (max-device-height: 800px){
   .resumeWrapper {
     margin-top: 20px;
   }
 
   .resumeContainer {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 30px;
-  }
-
-  .download,
-  .resumePlaceholder {
-    color: #666666;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    display: grid;
+    grid-template-columns: auto;
+    margin: 0 20px;
     justify-content: center;
     justify-items: center;
     text-align: center;
-    text-decoration: none;
-  }
-
-  .download {
-    justify-self: end;
-  }
-
-  .resumePlaceholder {
-    justify-self: start;
-  }
-
-
-  .openIcon,
-  .downloadIcon {
-    font-size: 100px;
-    color: #BCA9E8;
-    cursor: pointer;
-    margin: 30px;
-  }
-
-  .openIcon:hover,
-  .downloadIcon:hover {
-    transition: 2s;
-    color: #575757;
   }
 
   .header {

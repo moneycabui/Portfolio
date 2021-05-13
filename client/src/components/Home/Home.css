@@ -68,6 +68,10 @@ p {
   width: 90%;
 }
 
+.resume {
+  margin: 150px;
+}
+
 /* Keyframes */
 @keyframes moveLeftToRight {
   from{

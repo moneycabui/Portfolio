@@ -1,0 +1,41 @@
+.iconsContainer {
+  display: grid;
+  position: relative;
+  grid-template-columns: auto auto;
+  grid-gap: 30px;
+  justify-self: center;
+}
+
+.download,
+.open {
+  color: #666666;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.download {
+  justify-self: end;
+}
+
+.open {
+  justify-self: start;
+}
+
+
+.openIcon,
+.downloadIcon {
+  font-size: 75px;
+  color: #BCA9E8;
+  cursor: pointer;
+  margin: 30px;
+}
+
+.openIcon:hover,
+.downloadIcon:hover {
+  transition: 2s;
+  color: #575757;
+}
