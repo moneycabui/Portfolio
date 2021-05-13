@@ -27,7 +27,7 @@ const AboutMe = () => {
         <div className={styles.bodyText}>Some of my interests include tennis, backpacking, running (I&apos;ve ran two half marathons), photograhy, and art.</div>
 
         <h2 className={styles.contactTitle}>- • Contact • -</h2>
-        <div className={styles.bodyTextg}>
+        <div className={styles.bodyText}>
           <BsPersonLinesFill className={styles.contactIcon} />
           <span className={styles.contactText}> Monica Bui</span>
         </div>
