@@ -232,3 +232,14 @@
     justify-content: space-between;
   }
 }
+
+/* Media query for smaller/older mobile screens  - iPhone 5/SE, Galaxy S5, and Moto G4 models*/
+@media only screen and (max-device-width: 415px) and (min-device-height: 560px) {
+  .homeLink,
+  .aboutMeLink,
+  .projectsLink,
+  .resumeLink,
+  .contactLink {
+    font-size: 17px;
+  }
+}
