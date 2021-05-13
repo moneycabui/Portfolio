@@ -251,15 +251,24 @@ iPad, Surface:
 /* Media query for smaller/older mobile screens  - iPhone 5/SE, Galaxy S5, and Moto G4 models*/
 @media only screen and (max-device-width: 415px) and (min-device-height: 560px) {
   .intro {
-    margin-top: 150px;
-    grid-template-columns: 200px;
+    margin-top: 100px;
+    grid-template-columns: 700px;
     padding: auto 100px;
+  }
+
+  .hi {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  .contactButton {
+    margin-bottom: 30px;
   }
 
   .profileWrapper {
     display: grid;
     grid-template-columns: 75px auto;
-    margin: 30px auto 20px auto;
+    margin: 30px auto 50px auto;
     height: 75px;
     column-gap: 20px;
   }
@@ -293,24 +302,45 @@ iPad, Surface:
   }
 }
 
-/* Media query for mobile screens - iPhone 6/7/8/Plus, Galaxy Fold, Pixel 2/2 XL */
+/* Media query for mobile screens - iPhone 6/7/8/Plus, Galaxy Fold, Pixel 2 */
 @media only screen and (max-device-width: 415px) and (min-device-height: 652px) {
+  .intro {
+    margin-top: 150px;
+    grid-template-columns: 700px;
+  }
+
   .aboutTitle,
   .contactTitle {
     font-size: 20px;
-    margin-top: 125px;
+    margin-top: 80px;
     margin-bottom: 30px;
   }
 
   .contactButton {
-    margin-top: 100px;
-    margin-bottom: 150px;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
 }
 
-/* Media query for mobile screens - iPhone X */
+/* Media query for mobile screens - iPhone X, Pixel 2 XL */
 @media only screen and (max-device-width: 400px) and (min-device-height: 800px)  {
   .intro {
-    grid-template-columns: 700px;
+    margin-top: 200px;
+  }
+
+  .hi {
+    font-size: 45px;
+  }
+
+  .aboutTitle,
+  .contactTitle {
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 45px;
+  }
+
+  .contactButton {
+    margin-top: 90px;
+    margin-bottom: 90px;
   }
 }
