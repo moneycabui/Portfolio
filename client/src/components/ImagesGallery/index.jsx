@@ -11,7 +11,7 @@ const ImagesGallery = ({ images, openModal }) => {
     <div className={styles.imageWrapper} key={index+image[1]}>
       <img
         className={`${styles.image}${index} ${styles.image}`}
-        id={image + index}
+        id={'styles.image' + index}
         src={image[0]}
         alt={image[1]}
         onClick={(event) => openModal(event, image)}

@@ -15,7 +15,7 @@ const ProjectCard = ({ images }) => {
         <div className={styles.projectDescription}>{projectDetails[4]}</div>
       </div>
       <VscGithub
-        title="Project Link"
+        title="Project GitHub"
         onClick={() => window.open(`${projectLink}`)}
         className={styles.ghIcon}
         size={40}

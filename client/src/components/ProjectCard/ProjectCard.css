@@ -12,7 +12,7 @@
   overflow: hidden;
   width: 100%;
   max-width: 1400px;
-  height: 100%;
+  height: 500px;
 }
 
 .projectDetails {
@@ -72,4 +72,143 @@
 .ghIcon:hover {
   transition: 800ms;
   color: pink;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1350px) {
+  .projectCards {
+    transform: scale(0.9, 0.85);
+  }
+
+  .ghIcon {
+    top: 5%;
+    left: 3%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .projectCards {
+    transform: scale(0.8, 0.8);
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .projectCards {
+    transform: scale(1, 1);
+    height: 300px;
+  }
+
+  .projectTitle {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 17px;
+  }
+
+  .projectDescription {
+    margin: 20px 10px 30px 10px;
+    font-size: 12px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .projectCards {
+    transform: scale(1, 1);
+    height: 250px;
+  }
+
+  .projectTitle,
+  .projectDetails {
+    font-size: 11px;
+  }
+
+  .projectTitle {
+    margin-top: 5px;
+  }
+
+  .projectDescription {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .projectCards {
+    transform: scale(1, 1);
+    grid-template-rows: 200px;
+    height: 200px;
+  }
+
+  .projectTitle,
+  .projectDetails {
+    font-size: 9px;
+  }
+
+  .projectTitle {
+    margin-bottom: 3px;
+  }
+
+  .groupName,
+  .jobTitle {
+    margin: 3px 40px;
+    font-size: 8px;
+  }
+
+  .jobTitle {
+    margin-bottom: 10px;
+  }
+
+  .projectDescription {
+    font-size: 7.5px;
+    margin: 3px 10px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .projectDescription {
+    display: none;
+  }
+
+  .projectTitle,
+  .groupName,
+  .jobTitle {
+    font-size: 10px;
+    margin: 15px;
+  }
+
+  .projectDetails {
+    font-size: 10px;
+    width: 100%;
+    height: 200px;
+  }
+
+  .projectTitle {
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .projectTitle {
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .projectTitle,
+  .groupName,
+  .jobTitle {
+    margin: 10px;
+  }
+
+  .projectTitle {
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .projectTitle,
+  .projectDetails {
+    font-size: 8px;
+  }
 }
