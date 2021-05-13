@@ -1,7 +1,7 @@
 .hello {
   animation-name: moveLeftToRight;
   animation-duration: 1000s;
-  width: 
+  display: none;
 }
 
 .intro {
@@ -75,5 +75,112 @@ p {
   }
   to{
     transform: translateX(100000px);
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 875px) {
+  .carousel {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .intro {
+    grid-template-columns: 70%;
+  }
+
+  .name {
+    height: 50px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .carousel {
+    width: 70%;
+  }
+
+  .name {
+    height: 40px;
+    width: 180px;
+  }
+
+  .profilePhoto {
+    width: 50px;
+    height: 50px;
+  }
+
+  .profileWrapper {
+    column-gap: 30px;
+    justify-items: center;
+  }
+
+  .jobTitle {
+    margin: 7px 25px 10px 0;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .carousel {
+    width: 55%;
+  }
+
+  .name {
+    height: 30px;
+    width: 150px;
+    margin-right: 20px;
+    left: calc(50% - 50px);
+  }
+
+  .profilePhoto {
+    width: 30px;
+    height: 30px;
+  }
+
+  .profileWrapper {
+    column-gap: 10px;
+  }
+
+  .jobTitle {
+    margin: 7px 25px 10px 0;
+    font-size: 12px;
+    text-align: center;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .profileWrapper {
+    grid-template-columns: 70%;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+  }
+
+  .profilePhoto {
+    display: none;
+  }
+
+  .name {
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .carousel {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .carousel {
+    display: none;
+  }
+
+  .name {
+    height: 25px;
+    width: 100px;
   }
 }
