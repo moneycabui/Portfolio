@@ -1,12 +1,12 @@
 import React from 'react';
-import { RiCloseCircleFill } from 'react-icons/ri';
+import { IoCloseSharp } from 'react-icons/io5';
 import styles from './Modal.css'
 
 const Modal = ({ imageDisplayed, closeModal }) => {
   return (
     <div className={styles.modalContainer}>
       <div className={styles.modal}>
-        <RiCloseCircleFill className={styles.closeButton} onClick={closeModal} />
+        <IoCloseSharp className={styles.closeButton} onClick={closeModal} />
         <img
           className={styles.modalImage}
           src={imageDisplayed[0]}
