@@ -4,6 +4,7 @@ import serviceId from '../../../../emailjsServiceID.js';
 import templateId from '../../../../emailjsTemplateId.js';
 import userId from '../../../../emailjsUserId.js';
 import ContactAndSocialIcons from '../ContactAndSocialIcons';
+import { IoMailSharp } from 'react-icons/io5';
 import styles from './Contact.css';
 
 class Contact extends React.Component {
@@ -127,6 +128,11 @@ class Contact extends React.Component {
 
         <div className={styles.messageContainer}>
           <img className={styles.emailImage} src="/images/EmailIcon.jpeg" alt="Message Icon" />
+          <div className={styles.mediaQueryPlaceholder} onClick={() => window.open('mailto:monicabbui@gmail.com')}>
+            <IoMailSharp className={styles.emailPlaceholder} />
+            <br/>
+            <small className={styles.emailPlaceholderText}>Click to send an email.</small>
+          </div>
           <form className={styles.messageForm} onSubmit={this.handleMessageSend}>
             {sentNotificationRender}
             <label htmlFor="nameInput" className={styles.inputText}>First and Last Name*</label>
