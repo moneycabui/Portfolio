@@ -5,7 +5,9 @@
   "main": "webpack.config.js",
   "scripts": {
     "react-dev": "webpack -w",
-    "start": "nodemon server/server.js"
+    "nodemon": "nodemon server/server.js",
+    "start": "./node_modules/.bin/netlify-lambda serve client/dist/src",
+    "build": "./node_modules/.bin/netlify-lambda build client/dist/src"
   },
   "repository": {
     "type": "git",
@@ -22,11 +24,13 @@
     "express": "^4.17.1",
     "giphy-api": "^2.0.1",
     "identity-obj-proxy": "^3.0.0",
+    "netlify-lambda": "^2.0.6",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "serverless-http": "^2.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.13.1",
