@@ -13,7 +13,7 @@ const AboutMe = () => {
       <div className={styles.introWrapper}>
         <p className={styles.hi}>Hi, my name is</p>
         <div className={styles.profileWrapper}>
-          <img className={styles.profilePhoto} src="/images/ProfilePhoto.jpg" alt="Photo of Monica Bui" />
+          <img className={styles.profilePhoto} src="/images/ProfileImage.jpg" alt="Photo of Monica Bui" />
           <img className={styles.name} src="/images/Name.png" alt="Name" />
         </div>
         <div className={styles.icons}>

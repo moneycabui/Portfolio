@@ -11,7 +11,7 @@ const Home = ({ openModal }) => {
       <div className={styles.hello}>Hello</div>
       <section className={styles.intro}>
         <div className={styles.profileWrapper}>
-          <img className={styles.profilePhoto} src="/images/ProfilePhoto.jpg" alt="Photo of Monica Bui" />
+          <img className={styles.profilePhoto} src="/images/ProfileImage.jpg" alt="Photo of Monica Bui" />
           <img className={styles.name} src="/images/Name.png" alt="Name" />
         </div>
         <p className={styles.jobTitle}>Software Engineer in the Bay Area</p>
