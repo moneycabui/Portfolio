@@ -69,7 +69,7 @@ p {
 }
 
 .resume {
-  margin: 150px;
+  display: none;
 }
 
 /* Keyframes */
@@ -83,6 +83,15 @@ p {
 }
 
 /* Media Queries */
+@media screen and (max-width: 1024px) {
+  .resume {
+    margin: 150px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+}
+
 @media screen and (max-width: 875px) {
   .carousel {
     width: 80%;
