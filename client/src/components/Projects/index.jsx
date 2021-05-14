@@ -28,10 +28,10 @@ const Projects = ({ openModal }) => {
     <div className={styles.projects}>
       <h2 className={styles.projectsTitle}>- • Software Engineering Applications • -</h2>
       <div className={styles.gallery}>
-        <ResumeDownload />
         {projectImageCards}
         {projectTextCards}
         <ProjectCard images={sdcProject} />
+        <ResumeDownload />
       </div>
     </div>
   );
