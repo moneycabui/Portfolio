@@ -1,7 +1,23 @@
 .hello {
-  animation-name: moveLeftToRight;
-  animation-duration: 1000s;
-  display: none;
+  animation-name: extendsRight;
+  animation-duration: 12s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  margin: 0;
+  padding: 20px;
+  height: calc(90% - 150px);
+  position: fixed;
+  background-color: rgba(247, 247, 247, 0.9);
+  display: flex;
+  z-index: 999999;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  font-size: 200px;
+  font-family: Garamound;
 }
 
 .intro {
@@ -79,7 +95,28 @@ p {
     transform: translateX(-1000px);
   }
   to{
-    transform: translateX(100000px);
+    transform: translateX(50%);
+  }
+}
+
+@keyframes extendsRight {
+  0% {
+    transform: translateX(-100%);
+    width: 45%;
+  }
+  50%, 70% {
+    width: 100%;
+    background-color: black;
+    color: white;
+    transform: translateX(0%);
+  }
+  80%, 90%, 95% {
+    width: 45%;
+    display:none;
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 

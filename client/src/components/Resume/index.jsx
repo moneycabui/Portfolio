@@ -6,6 +6,7 @@ import styles from './Resume.css';
 const Resume = () => {
   return (
     <div>
+      <div className={styles.background}></div>
       <div className={styles.header}>
         <ResumeDownload />
       </div>
