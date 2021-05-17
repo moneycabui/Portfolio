@@ -8,7 +8,7 @@ import styles from './Home.css';
 const Home = ({ openModal }) => {
   return (
     <div>
-      <div className={styles.hello}>Hello</div>
+      {/* <div className={styles.hello}>Hello</div> */}
       <section className={styles.intro}>
         <div className={styles.profileWrapper}>
           <img className={styles.profilePhoto} src="/images/ProfileImage.jpg" alt="Photo of Monica Bui" />
