@@ -89,6 +89,14 @@
   height: 100px;
 }
 
+.download {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
 .downloadIcon,
 .resumeIcon {
   position: relative;

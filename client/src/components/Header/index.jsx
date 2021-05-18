@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoDownloadOutline, IoOpenOutline } from 'react-icons/io5';
+import ResumeIcons from '../ResumeIcons';
 import styles from './Header.css';
 import { Link } from 'react-router-dom';
 
@@ -17,7 +18,7 @@ const Header = ({ closeModal }) => {
         <Link to="/Contact" className={styles.contactLink}>Contact</Link>
       </div>
       <div className={styles.iconContainer}>
-        <a href="/documents/MonicaBuiResume.pdf" download="Monica Bui Resume">
+        <a href="/documents/MonicaBuiResume.pdf" download="Monica Bui Resume" className={styles.download}>
           <IoDownloadOutline
             title="Download Resume PDF"
             className={styles.downloadIcon}
