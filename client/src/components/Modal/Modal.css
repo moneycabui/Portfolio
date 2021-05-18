@@ -28,9 +28,11 @@
   cursor: pointer;
   z-index: 999;
   border-radius: 50px; */
+  display: none;
 }
 
 .closeButton:hover {
+  display: none;
   opacity: 0.9;
   transition: 500ms;
   color: rgb(2, 30, 55);
