@@ -65,7 +65,6 @@ class ImagesCarousel extends React.Component {
         {showLeftArrow
         ? <IoIosArrowBack
           className={styles.previousButton}
-          // size="5"
           onClick={(event) => this.handleScrollClick(event, -scrollLength)}
           />
           : <div className={styles.previousButtonPlaceholder}></div>
@@ -81,7 +80,6 @@ class ImagesCarousel extends React.Component {
         {showRightArrow &&
           <IoIosArrowForward
           className={styles.nextButton}
-          // size="5"
           onClick={(event) => this.handleScrollClick(event, scrollLength)}
           />
         }
