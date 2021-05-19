@@ -45,10 +45,9 @@ li {
 
 .paper {
   /* Paper ratio should be 17:22 (w:h) */
-  max-height: 1000px;
-  width: 800px;
-  /* height: 1400px; */
-  padding: 65px;
+  height: 880px;
+  width: 680px;
+  padding: 50px;
   box-shadow: 2px 2px 7px 2px #EDEDED;
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -79,11 +78,9 @@ li {
 .columnOne,
 .columnTwo {
   margin-top: 20px;
-  object-fit: contain;
 }
 
 .columnOne {
-  position: relative;
   border-right: solid #E0E0E0 1px;
   padding-right: 20px;
 }
@@ -175,7 +172,7 @@ h3 {
 /* Media Queries */
 
 @media screen and (max-width: 1150px) {
-  /* .resumeWrapper {
+  .resumeWrapper {
     transform: scale(1, 1);
     column-gap: 0px;
     margin: 50px 20px;
@@ -183,40 +180,40 @@ h3 {
 
   .title {
     padding: 10px;
-  } */
+  }
 }
 
 @media screen and (max-width: 1050px) {
-  /* .resumeWrapper {
+  .resumeWrapper {
     transform: scale(0.8, 0.8);
     margin: 0px 20px;
     margin-top: -50px;
-  } */
+  }
 }
 
 @media screen and (max-width: 870px) {
-  /* .resumeWrapper {
+  .resumeWrapper {
     transform: scale(0.7, 0.7);
     margin-top: -100px;
-  } */
+  }
 }
 
 @media screen and (max-width: 800px) {
-  /* .resumeWrapper {
+  .resumeWrapper {
     transform: scale(0.6, 0.6);
     margin-top: -150px;
-  } */
+  }
 }
 
 @media screen and (max-width: 690px) {
-  /* .resumeWrapper {
+  .resumeWrapper {
     transform: scale(0.5, 0.5);
     margin-top: -200px;
-  } */
+  }
 }
 
 @media screen and (max-width: 580px) {
-  /* .resumeWrapper {
+  .resumeWrapper {
     display: none;
   }
 
@@ -227,24 +224,24 @@ h3 {
     justify-content: center;
     justify-items: center;
     text-align: center;
-  } */
+  }
 }
 
 /* Media query for mobile screens */
 @media only screen and (max-device-width: 415px) and (min-device-height: 560px) {
-  /* .resumeContainer {
+  .resumeContainer {
     display: grid;
     grid-template-columns: auto;
     margin: 100px 20px;
     justify-content: center;
     justify-items: center;
     text-align: center;
-  } */
+  }
 }
 
 /* Media queries for some common tablet screens */
 @media only screen and (max-device-width: 1024px) and (min-device-height: 815px) {
-  /* .resumeWrapper {
+  .resumeWrapper {
     margin-top: -55px;
   }
 
@@ -256,12 +253,12 @@ h3 {
     justify-items: center;
     text-align: center;
     margin-top: -50px;
-  } */
+  }
 }
 
 /* Media query for surface duo */
 @media only screen and (min-device-width: 500px) and (min-device-height: 700px) and (max-device-width: 600px) and (max-device-height: 800px){
-  /* .resumeWrapper {
+  .resumeWrapper {
     margin-top: 20px;
   }
 
@@ -276,5 +273,5 @@ h3 {
 
   .header {
     display: none;
-  } */
+  }
 }
