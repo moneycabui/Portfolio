@@ -17,7 +17,7 @@
   opacity: 0.8;
   height: 490px;
   max-height: calc(100vh - 110px);
-  min-height: 50vh;
+  min-height: calc(50vh - 10px);
   width: 50px;
   z-index: 10;
   border: 5px solid transparent;
@@ -104,18 +104,6 @@
 }
 
 /* Media query for mobile screens */
-@media only screen and (max-device-width: 415px) and (min-device-height: 560px) and (orientation: portrait) {
-  .imageContainer,
-  .image {
-    height: 800px;
-  }
+/* @media only screen and (max-device-width: 415px) and (min-device-height: 560px) and (orientation: portrait) {
 
-  .previousButton,
-  .nextButton {
-    height: 790px;
-  }
-
-  .carousel {
-    margin-top: 150px;
-  }
-}
+} */
