@@ -31,6 +31,7 @@ class App extends React.Component {
       displayModal: true,
       imageDisplayed: imageDisplayed,
     });
+    document.querySelector("html").style.overflowY = "hidden";
     document.getElementById("contents").style.filter = "blur(8px)";
     document.getElementById("contents").onclick = this.closeModal;
   }
@@ -38,6 +39,7 @@ class App extends React.Component {
   closeModal(event) {
     event.preventDefault();
     this.setState({ displayModal: false });
+    document.querySelector("html").style.overflowY = "unset";
     document.getElementById("contents").style.filter = "none";
   }
 

@@ -28,7 +28,7 @@
 
 .openIcon,
 .downloadIcon {
-  font-size: 75px;
+  font-size: 50px;
   color: #BCA9E8;
   cursor: pointer;
   margin: 30px;
@@ -38,4 +38,24 @@
 .downloadIcon:hover {
   transition: 2s;
   color: #575757;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 250px) {
+  .iconsContainer {
+    grid-template-columns: auto;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    width: 30%;
+    grid-gap: 0px;
+  }
+
+  .download,
+  .open {
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+  }
 }

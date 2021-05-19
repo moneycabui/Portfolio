@@ -22,9 +22,9 @@ const Home = ({ openModal }) => {
           <ImagesCarousel images={images} openModal={openModal} />
         </div>
       </section>
-      {/* <section className={styles.resume}>
+      <div className={styles.ResumeIcons}>
         <ResumeIcons />
-      </section> */}
+      </div>
     </div>
   );
 }

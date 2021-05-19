@@ -6,6 +6,15 @@
   justify-items: center;
 }
 
+.modalOpen {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 80px 30px 20px 30px;
+  justify-content: center;
+  justify-items: center;
+  overflow: hidden;
+}
+
 .projectsTitle {
   margin: 20px;
 }
@@ -46,3 +55,14 @@
     row-gap: 30px;
   }
 }
+
+/*
+Common mobile screen sizes:
+  Width: 280, 320, 375, 360, 411, 414
+  Height: 568, 640, 653, 667, 731, 736, 812, 823
+iPad, Surface:
+  W: 768, 1024, 540
+  H: 1024, 1366, 720
+*/
+
+/* Mobile Screen Media Queries */
