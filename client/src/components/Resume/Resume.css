@@ -45,7 +45,7 @@ li {
 
 .paper {
   /* Paper ratio should be 17:22 (w:h) */
-  height: 880px;
+  min-height: 880px;
   width: 680px;
   padding: 50px;
   box-shadow: 2px 2px 7px 2px #EDEDED;
