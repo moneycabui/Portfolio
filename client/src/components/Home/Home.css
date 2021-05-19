@@ -121,7 +121,7 @@ p {
 }
 
 /* Media Queries */
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .resume {
     margin: 150px;
     display: flex;
@@ -235,12 +235,12 @@ p {
     width: 100px;
   }
 }
-
+*/
 
 
 /* Media query for mobile screens */
-@media only screen and (max-device-width: 415px) and (min-device-height: 560px) {
+/* @media only screen and (max-device-width: 415px) and (min-device-height: 560px) {
   .intro {
     margin-top: 150px;;
   }
-}
+} */
