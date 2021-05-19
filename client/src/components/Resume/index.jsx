@@ -18,7 +18,6 @@ const Resume = () => {
           </div>
           <div className={styles.contact}>
             <div>
-              {/* Make on clicks that take you to links */}
               <div>San Francisco, CA</div>
               <div onClick={() => window.open('http://monicabui.com')}>www.monicabui.com</div>
               <div onClick={() => window.open('mailto:monicabbui@gmail.com')}>monicabbui@gmail.com</div>
@@ -28,7 +27,6 @@ const Resume = () => {
           </div>
           <div className={styles.columnOne}>
             <h2>Software Engineering Applications</h2>
-            {/* Make on clicks that take you to links */}
             <div title="Click to go to GitHub" onClick={() => window.open('https://github.com/Crafty-Caribbean/stitchSaver')} className={styles.gitHubLinks}>
               <h3>Product Manager and Software Programmer</h3>
               <span className={styles.projectName}>Stitch Saver | </span>

@@ -1,12 +1,11 @@
 import React from 'react';
 import { IoDownloadOutline, IoOpenOutline } from 'react-icons/io5';
-import ResumeIcons from '../ResumeIcons';
 import styles from './Header.css';
 import { Link } from 'react-router-dom';
 
 const Header = ({ closeModal }) => {
   return (
-    <nav className={styles.header} id="header" onClick={closeModal}>
+    <nav className={styles.header} id="header">
       <Link to="/">
         <img className={styles.headerImage} src="/images/ProfilePhoto.jpg" alt="Monica Bui" />
       </Link>
