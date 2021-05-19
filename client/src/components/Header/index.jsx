@@ -3,9 +3,13 @@ import { IoDownloadOutline, IoOpenOutline } from 'react-icons/io5';
 import styles from './Header.css';
 import { Link } from 'react-router-dom';
 
-const Header = ({ closeModal }) => {
+const Header = ({ closeModal, displayModal }) => {
+  let clickOption;
+  if (displayModal === true) {
+    clickOption = closeModal;
+  }
   return (
-    <nav className={styles.header} id="header">
+    <nav className={styles.header} id="header" onClick={clickOption}>
       <Link to="/">
         <img className={styles.headerImage} src="/images/ProfilePhoto.jpg" alt="Monica Bui" />
       </Link>

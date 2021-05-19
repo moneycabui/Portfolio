@@ -47,7 +47,7 @@ class App extends React.Component {
     return (
       <Router>
         <div className={styles.app}>
-          <Header closeModal={this.closeModal} />
+          <Header closeModal={this.closeModal} displayModal={displayModal} />
           {displayModal &&
             <Modal imageDisplayed={imageDisplayed} closeModal={this.closeModal} />
           }

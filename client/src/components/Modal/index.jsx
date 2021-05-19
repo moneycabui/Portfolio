@@ -4,15 +4,13 @@ import styles from './Modal.css'
 
 const Modal = ({ imageDisplayed, closeModal }) => {
   return (
-    <div className={styles.modalContainer}>
-      <div className={styles.modal}>
-        <IoCloseSharp className={styles.closeButton} onClick={closeModal} />
-        <img
-          className={styles.modalImage}
-          src={imageDisplayed[0]}
-          alt={imageDisplayed[1]}
-        />
-      </div>
+    <div className={styles.modal}>
+      <IoCloseSharp className={styles.closeButton} onClick={closeModal} />
+      <img
+        className={styles.modalImage}
+        src={imageDisplayed[0]}
+        alt={imageDisplayed[1]}
+      />
     </div>
   );
 }
