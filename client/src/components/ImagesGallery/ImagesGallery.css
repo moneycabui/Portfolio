@@ -225,7 +225,7 @@
     justify-items: center;
     overflow: hidden;
     width: 100vw;
-    height: 600px;
+    height: 610px;
     border-radius: 20px;
     box-shadow: 2px 2px 7px 1px #b5b4b4;
     overflow: hidden;
@@ -233,15 +233,18 @@
 
   .imageWrapper,
   .image {
+    overflow: hidden;
     height: 300px;
     object-fit: cover;
   }
 
   .image:hover {
+    overflow: hidden;
     height: 300px;
   }
 
   .projectDetails {
+    overflow: hidden;
     position: relative;
     width: calc(100% - 40px);
     height: calc(300px - 40px);
