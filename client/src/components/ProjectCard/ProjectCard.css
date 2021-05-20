@@ -214,6 +214,11 @@
 }
 
 @media only screen and (max-device-width: 415px) and (min-device-height: 560px) and (orientation: portrait) {
+  .projectCards {
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px 1px #b5b4b4;
+  }
+
   .gallery {
     width: 100vw;
   }
