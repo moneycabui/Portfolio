@@ -22,3 +22,9 @@
 .downloadButton:focus {
   background-position: right;
 }
+
+@media only screen and (max-device-width: 415px) and (min-device-height: 560px) and (orientation: portrait) {
+  .downloadButton {
+    font-size: 20px;
+  }
+}
