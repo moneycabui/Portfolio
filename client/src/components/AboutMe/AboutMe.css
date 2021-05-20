@@ -225,3 +225,9 @@ p,
     display: none;
   }
 }
+
+@media only screen and (max-device-width: 415px) and (min-device-height: 560px) and (orientation: portrait) {
+  .intro {
+    margin: 130px 100px 20px 100px;
+  }
+}
