@@ -212,3 +212,49 @@
     font-size: 8px;
   }
 }
+
+/* Mobile Screen Media Queries */
+
+@media only screen and (max-device-width: 415px) and (min-device-height: 560px) and (orientation: portrait) {
+  .gallery {
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-rows: 300px 300px;
+    grid-gap: 10px;
+    padding: 0;
+    margin: 0;
+    justify-items: center;
+    overflow: hidden;
+    width: 100vw;
+    height: 600px;
+  }
+
+  .imageWrapper,
+  .image {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .image:hover {
+    height: 300px;
+  }
+
+  .projectDetails {
+    position: relative;
+    width: calc(100% - 40px);
+    height: calc(300px - 40px);
+  }
+
+  .projectTitle {
+    font-size: 35px;
+    margin-top: 70px;
+  }
+
+  .groupName,
+  .jobTitle {
+    font-size: 25px;
+  }
+
+  .projectDescription {
+    display: none;
+  }
+}

@@ -7,7 +7,6 @@
   padding: 10px 0px;
   border-radius: 50px 50px 20px 20px;
   background-color: white;
-  opacity: 0.9;
   z-index: 999;
 }
 
@@ -82,7 +81,6 @@
   right: 25px;
   bottom: 5px;
   background-color: white;
-  /* background-color: #F2F2F2; */
   opacity: 0.9;
   padding: 20px 10px;
   border-radius: 50px 50px 20px 20px;
@@ -94,7 +92,30 @@
 
 .socialMediaContainer:hover,
 .emailFooter:hover {
-  /* background-color: #F2F2F2; */
   transition: 250ms;
-  /* color: black; */
+}
+
+/* Media query for mobile screens */
+@media only screen and (orientation: portrait) {
+  .socialMediaContainer {
+    left: 50px;
+    bottom: 50px;
+    z-index: 9999999;
+  }
+
+  .emailIcon,
+  .liIcon,
+  .ghIcon,
+  .igIcon,
+  .fbIcon {
+    font-size: 55px;
+    padding: 15px;
+    z-index: 9999999;
+  }
+
+  .emailFooter {
+    right: 25px;
+    bottom: 25px;
+    font-size: 30px;
+  }
 }

@@ -66,3 +66,10 @@ iPad, Surface:
 */
 
 /* Mobile Screen Media Queries */
+
+@media only screen and (max-device-width: 415px) and (min-device-height: 560px) and (orientation: portrait) {
+  .gallery {
+    margin: 20px 0px 50px 0px;
+    justify-self: center;
+  }
+}

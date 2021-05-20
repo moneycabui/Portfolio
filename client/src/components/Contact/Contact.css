@@ -383,7 +383,7 @@
   }
 }
 
-/* Media query for smaller/older mobile screens  - iPhone 5/SE/6/7/8/Plus, Galaxy S5, and Moto G4 models, Pixel 2 */
+/* Media query for mobile screens */
 @media only screen and (max-device-width: 415px) and (min-device-height: 560px) {
   .contact {
     margin-top: 80px;
@@ -461,26 +461,4 @@
   .submitMessageButton {
     margin-left: 25px;
   }
-}
-
-/* Media query for mobile screens - iPhone X, Pixel 2 XL, Galaxy Fold */
-@media only screen and (max-device-width: 412px) and (min-device-height: 800px) and (orientation: portrait) {
-  /* .nameInput,
-  .titleInput,
-  .companyInput,
-  .emailInput,
-  .phoneInput,
-  .subjectInput,
-  .messageInput {
-    margin-bottom: 30px;
-  }
-
-  .phoneInput,
-  .messageInput {
-    margin-bottom: 0px;
-  }
-
-  .note {
-    margin-bottom: 30px;
-  } */
 }

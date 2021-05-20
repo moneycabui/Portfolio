@@ -212,3 +212,23 @@
     font-size: 8px;
   }
 }
+
+@media only screen and (max-device-width: 415px) and (min-device-height: 560px) and (orientation: portrait) {
+  .gallery {
+    width: 100vw;
+  }
+
+  .projectTitle {
+    font-size: 35px;
+  }
+
+  .groupName,
+  .jobTitle {
+    font-size: 25px;
+  }
+
+  .projectDescription {
+    font-size: 20px;
+    margin: 30px 70px;
+  }
+}

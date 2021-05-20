@@ -116,6 +116,8 @@
   color: #575757;
 }
 
+/* Media Queries */
+
 @media screen and (max-width: 845px) {
   .header {
     grid-template-columns: 100px auto auto;
@@ -241,13 +243,28 @@
   }
 }
 
+/* Media Queries for Mobile Screens */
+
 /* Media query for smaller/older mobile screens  - iPhone 5/SE, Galaxy S5, and Moto G4 models*/
-@media only screen and (max-device-width: 415px) and (min-device-height: 560px) {
+@media only screen and (max-device-width: 415px) and (min-device-height: 560px) and (orientation: portrait) {
   .homeLink,
   .aboutMeLink,
   .projectsLink,
   .resumeLink,
   .contactLink {
-    font-size: 17px;
+    font-size: 25px;
+    padding: 10px 15px;
+    margin: 30px 7px;
+  }
+
+  .downloadIcon,
+  .resumeIcon {
+    position: relative;
+    padding: 0 10px;
+    color: #BCA9E8;
+    cursor: pointer;
+    height: 50px;
+    border-bottom: white solid 5px;
+    font-size: 40px;
   }
 }
