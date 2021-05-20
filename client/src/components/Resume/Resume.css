@@ -1,3 +1,10 @@
+.page {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+}
+
 .header {
   margin-top: 120px;
   display: grid;
@@ -12,15 +19,18 @@
 }
 
 .resumeWrapper {
+  /* Paper ratio should be 17:22 (w:h) */
   display: grid;
   grid-template-columns: 100px auto;
   column-gap: 30px;
   margin: 100px 20px;
   justify-content: center;
   justify-items: center;
+  justify-self: center;
   font-size: 11px;
   color: #666666;
-  transform: scale(1.1, 1.1);
+  width: 85vw;
+  max-height: 110vw;
 }
 
 p,
@@ -44,14 +54,12 @@ li {
 }
 
 .paper {
-  /* Paper ratio should be 17:22 (w:h) */
-  min-height: 880px;
-  width: 680px;
   padding: 50px;
   box-shadow: 2px 2px 7px 2px #EDEDED;
   display: grid;
   grid-template-columns: 3fr 2fr;
   background-color: white;
+  height: fit-content;
 }
 
 .name {
