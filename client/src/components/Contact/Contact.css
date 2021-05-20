@@ -385,7 +385,7 @@
 /* Media query for smaller/older mobile screens  - iPhone 5/SE/6/7/8/Plus, Galaxy S5, and Moto G4 models, Pixel 2 */
 @media only screen and (max-device-width: 415px) and (min-device-height: 560px) {
   .contact {
-    margin-top: 150px;
+    margin-top: 80px;
   }
 
   .contactTitle {
@@ -449,6 +449,16 @@
   .note {
     font-size: 20px;
     margin: 0;
+  }
+
+  .submitMessageButton,
+  .cancelButton {
+    font-size: 30px;
+    padding: 15px 30px;
+  }
+
+  .submitMessageButton {
+    margin-left: 25px;
   }
 }
 
