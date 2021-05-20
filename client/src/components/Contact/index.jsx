@@ -19,7 +19,7 @@ class Contact extends React.Component {
       subjectInput: '',
       messageInput: '',
       charCount: 0,
-      sentStatus: 'default',
+      sentStatus: 'sent',
     };
     this.handleChange = this.handleChange.bind(this);
     this.handlePhoneInput = this.handlePhoneInput.bind(this);

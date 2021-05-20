@@ -23,7 +23,7 @@
 
 .messageContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
   column-gap: 100px;
   justify-content: center;
   justify-items: center;
@@ -59,7 +59,7 @@
 .sentNotification,
 .failedNotification {
   justify-self: center;
-  margin: 10px;
+  margin: 3px;
   margin-top: 20px;
   color: white;
   transition: 1s;
@@ -212,32 +212,9 @@
   transition: 500ms;
 }
 
-@media screen and (max-width: 1350px) {
-  .messageForm {
-    width: 60%;
-  }
+/* Media Queries */
 
-  .messageContainer {
-    column-gap: 90px;
-  }
-}
-
-@media screen and (max-width: 1250px) {
-  .messageForm {
-    width: 75%;
-  }
-
-  .messageContainer {
-    column-gap: 80px;
-  }
-
-  .characterCount,
-  .note {
-    font-size: 9;
-  }
-}
-
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1150px) {
   .messageForm {
     width: 85%;
   }
@@ -245,72 +222,69 @@
   .messageContainer {
     column-gap: 70px;
   }
-}
 
-@media screen and (max-width: 1025px) {
-  .messageContainer {
-    column-gap: 60px;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .characterCount,
-  .note {
-    font-size: 8px;
-  }
-
-  .messageForm {
-    width: 85%;
-  }
-
-  .messageContainer {
-    column-gap: 50px;
+  .emailImage {
+    width: 250px;
   }
 }
 
 @media screen and (max-width: 800px) {
   .messageContainer {
-    column-gap: 35px;
+    column-gap: 30px;
   }
-}
 
-@media screen and (max-width: 715px) {
   .characterCount,
   .note {
-    font-size: 7px;
+    font-size: 9px;
   }
 
-  .messageContainer {
-    column-gap: 25px;
+  .emailImage {
+    width: 200px;
   }
 }
 
-@media screen and (max-width: 685px) {
+@media screen and (max-width: 700px) {
+  .characterCount,
+  .note {
+    font-size: 8px;
+  }
+
+  .emailImage {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 650px) {
   .messageContainer {
     grid-template-columns: 1fr;
     justify-items: center;
     justify-content: center;
-    column-gap: 0;
-  }
-
-  .emailImage,
-  .messageForm {
     justify-self: center;
+    grid-gap: 0;
   }
 
-  .messageForm {
-    width: 75%;
+  .messageForm,
+  .emailImage {
+    width: 65vw;
+    justify-self: center;
+    align-self: start;
+    margin: 0;
   }
 
   .characterCount,
   .note {
     font-size: 10px;
   }
+
+  .emailImage {
+    width: 250px;
+  }
 }
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 570px) {
   .messageForm {
-    width: 65%;
+    width: 55vw;
   }
 
   .characterCount {
@@ -321,9 +295,32 @@
     text-align: center;
     font-size: 8.5px;
   }
+
+  .emailImage {
+    width: 200px;
+  }
 }
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 550px) {
+  .contactTitle {
+    margin: 50px 10px;
+    height: 45px;
+    width: 125px
+  }
+
+  .notesWrapper {
+    display: grid;
+    grid-template-columns: auto;
+    justify-self: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .characterCount,
+  .note {
+    font-size: 10px;
+  }
+
   .buttonsContainer {
     display: grid;
     grid-template-columns: auto;
@@ -333,28 +330,19 @@
   .cancelButton {
     margin: 5px 0px;
   }
-
-  .characterCount,
-  .note {
-    font-size: 8;
-  }
 }
 
-@media screen and (max-width: 530px) {
-  .messageForm {
-    width: 45%;
-  }
-}
-
-@media screen and (max-width: 470px) {
-  .messageForm {
-    width: 30%;
+@media screen and (max-width: 450) {
+  .messageContainer {
+    grid-template-columns: 35vw;
   }
 
   .emailImage {
     width: 100px;
   }
 }
+
+
 
 @media screen and (max-width: 390px) {
   .socialIcons,
@@ -400,13 +388,18 @@
     margin-top: 150px;
   }
 
+  .contactTitle {
+    height: 90px;
+    width: 250px;
+  }
+
   .messageContainer {
-    margin-top: 50px;
+    margin-top: 20px;
     grid-template-columns: 1fr;
     justify-content: center;
     justify-items: center;
     column-gap: 0;
-    row-gap: 30px;
+    row-gap: 15px;
   }
 
   .socialIcons {
@@ -416,16 +409,52 @@
   .emailImage,
   .messageForm {
     justify-self: center;
+    margin: 0;
   }
 
   .messageForm {
     width: 70%;
   }
+
+  .emailImage {
+    width: 200px;
+  }
+
+  .messageForm,
+  .inputText,
+  .titleInputText,
+  .companyInputText {
+    font-size: 30px;
+  }
+
+  .messageForm {
+    row-gap: 15px;
+  }
+
+  .nameInput,
+  .titleInput,
+  .companyInput,
+  .emailInput,
+  .phoneInput,
+  .subjectInput,
+  .messageInput {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .defaultNotification,
+  .sentNotification,
+  .failedNotification,
+  .characterCount,
+  .note {
+    font-size: 20px;
+    margin: 0;
+  }
 }
 
 /* Media query for mobile screens - iPhone X, Pixel 2 XL, Galaxy Fold */
-@media only screen and (max-device-width: 412px) and (min-device-height: 800px)  {
-  .nameInput,
+@media only screen and (max-device-width: 412px) and (min-device-height: 800px) and (orientation: portrait) {
+  /* .nameInput,
   .titleInput,
   .companyInput,
   .emailInput,
@@ -442,5 +471,5 @@
 
   .note {
     margin-bottom: 30px;
-  }
+  } */
 }
