@@ -224,7 +224,7 @@
     margin: 0;
     justify-items: center;
     overflow: hidden;
-    width: 100vw;
+    width: calc(100vw + 20px);
     height: 610px;
     border-radius: 20px;
     box-shadow: 2px 2px 7px 1px #b5b4b4;
@@ -248,6 +248,7 @@
     position: relative;
     width: calc(100% - 40px);
     height: calc(300px - 40px);
+    object-fit: cover;
   }
 
   .projectTitle {
