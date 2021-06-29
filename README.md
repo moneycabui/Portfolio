@@ -22,6 +22,9 @@ github.com/Charismatic-Cedar/QuestionsAPI
 
 ## Features
 
+Contact Page with links/icons and contact form that sends email directly:
+<img width="1770" alt="Contact" src="https://user-images.githubusercontent.com/69405223/123865070-524d3e80-d8e0-11eb-91de-40a92b4fa431.png">
+
 Trackpad and Wheel Scrollable Image Carousel:
 <img width="1759" alt="ImageCarousel" src="https://user-images.githubusercontent.com/69405223/123864570-c4715380-d8df-11eb-96f6-f39e06fe9445.png">
 
