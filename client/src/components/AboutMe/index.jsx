@@ -21,8 +21,8 @@ const AboutMe = () => {
         </div>
 
         <h2 className={styles.aboutTitle}>- • About Me • -</h2>
-        <div className={styles.bodyText}>I am a full-stack software engineer with a passion for problem solving and deduction. I thrive in situations that require meticulous analytical investigation.</div>
-        <div className={styles.bodyText}>Formerly, I was an ABA Certificated Paralegal working in the Emerging Companies, Debt Financing, and Corporate Law fields.</div>
+        <div className={styles.bodyText}>I am an ABA certificated paralegal and full-stack software engineer with a passion for problem solving and deduction. I thrive in situations that require meticulous analytical investigation.</div>
+        <div className={styles.bodyText}>Thus far, I&apos;ve been working in the Emerging Companies, Debt Financing, and Corporate Law fields.</div>
         <div className={styles.bodyText}>Presently volunteering as a Crisis Counselor at Crisis Text Line.</div>
         <div className={styles.bodyText}>Some of my interests include tennis, backpacking, running (I&apos;ve ran two half marathons), photograhy, and art.</div>
 
