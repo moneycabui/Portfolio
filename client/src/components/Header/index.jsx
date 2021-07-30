@@ -10,15 +10,15 @@ const Header = ({ closeModal, displayModal }) => {
   }
   return (
     <nav className={styles.header} id="header" onClick={clickOption}>
-      <NavLink to="/">
+      <Link to="/">
         <img className={styles.headerImage} src="/images/ProfilePhoto.jpg" alt="Monica Bui" />
-      </NavLink>
+      </Link>
       <div className={styles.links}>
-        <NavLink to="/" className={styles.homeLink}>Home</NavLink>
-        <NavLink to="/AboutMe" className={styles.aboutMeLink}>About Me</NavLink>
-        <NavLink to="/Projects" className={styles.projectsLink}>Projects</NavLink>
-        <NavLink to="/Resume" className={styles.resumeLink}>Resume</NavLink>
-        <NavLink to="/Contact" className={styles.contactLink}>Contact</NavLink>
+        <Link to="/" className={styles.homeLink}>Home</Link>
+        <Link to="/AboutMe" className={styles.aboutMeLink}>About Me</Link>
+        <Link to="/Projects" className={styles.projectsLink}>Projects</Link>
+        <Link to="/Resume" className={styles.resumeLink}>Resume</Link>
+        <Link to="/Contact" className={styles.contactLink}>Contact</Link>
       </div>
       <div className={styles.iconContainer}>
         <a href="/documents/MonicaBuiResume.pdf" download="Monica Bui Resume" className={styles.download}>

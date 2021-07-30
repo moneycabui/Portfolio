@@ -56,7 +56,8 @@ class App extends React.Component {
             <Modal imageDisplayed={imageDisplayed} closeModal={this.closeModal} />
           }
           <div id="contents">
-            <HashRouter>
+            <Switch>
+            {/* <HashRouter> */}
               <Route path="/"exact>
                 <Home
                   openModal={this.openModal}
@@ -72,7 +73,8 @@ class App extends React.Component {
               <Route path="/Contact" component={Contact} exact/>
               <Route path="/Resume" component={Resume} exact/>
               <Route path="*" render={() => (<div>Page does not exist.</div>)} />
-            </HashRouter>
+            </Switch>
+            {/* </HashRouter> */}
           </div>
           <Footer />
         </div>
