@@ -18,7 +18,7 @@ const project = [
   [
     // Array format: [title, group name, job title, project link, project description]
     'Stitch Saver',
-    'Group Project - Carfty Caribbean',
+    'Group Project - Crafty Caribbean',
     'Product Manager and Software Programmer',
     'https://github.com/Crafty-Caribbean/stitchSaver',
     'Led a team of seven software engineers to create an application designed for discovering and tracking artistic projects. Constructed the header component - comprised of the search bar, search suggestions, and navigation subcomponents using JavaScript, React, CSS Modules, Node Express, and Postgres.'

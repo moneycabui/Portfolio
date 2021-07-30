@@ -11,7 +11,9 @@ import styles from './App.css';
 import {
   BrowserRouter as Router,
   Route,
-  Switch
+  Switch,
+  NavLink,
+  HashRouter
 } from 'react-router-dom';
 
 class App extends React.Component {
@@ -54,7 +56,7 @@ class App extends React.Component {
             <Modal imageDisplayed={imageDisplayed} closeModal={this.closeModal} />
           }
           <div id="contents">
-            <Switch>
+            <HashRouter>
               <Route path="/"exact>
                 <Home
                   openModal={this.openModal}
@@ -70,7 +72,7 @@ class App extends React.Component {
               <Route path="/Contact" component={Contact} exact/>
               <Route path="/Resume" component={Resume} exact/>
               <Route path="*" render={() => (<div>Page does not exist.</div>)} />
-            </Switch>
+            </HashRouter>
           </div>
           <Footer />
         </div>
