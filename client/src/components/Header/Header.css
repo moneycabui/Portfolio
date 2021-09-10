@@ -49,6 +49,7 @@
 .aboutMeLink,
 .projectsLink,
 .resumeLink,
+.lifestyleLink,
 .contactLink {
   /* Font height (20) + top/bottom margin + top/bottom padding = total height (100)*/
   padding: 10px 15px;
@@ -73,6 +74,7 @@
 .aboutMeLink:hover,
 .projectsLink:hover,
 .resumeLink:hover,
+.lifestyleLink:hover,
 .contactLink:hover {
   transition: 1s;
   border-bottom: solid 3px;
@@ -129,6 +131,7 @@
   .aboutMeLink,
   .projectsLink,
   .resumeLink,
+  .lifestyleLink,
   .contactLink {
     margin: 30px 0;
   }
@@ -139,6 +142,7 @@
   .aboutMeLink,
   .projectsLink,
   .resumeLink,
+  .lifestyleLink,
   .contactLink {
     padding: 10px 10px;
   }
@@ -154,6 +158,7 @@
   .aboutMeLink,
   .projectsLink,
   .resumeLink,
+  .lifestyleLink,
   .contactLink {
     font-size: 12px;
   }
@@ -169,6 +174,7 @@
   .aboutMeLink,
   .projectsLink,
   .resumeLink,
+  .lifestyleLink,
   .contactLink {
     font-size: 11px;
   }

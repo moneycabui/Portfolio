@@ -15,9 +15,10 @@ const Header = ({ closeModal, displayModal }) => {
       </Link>
       <div className={styles.links}>
         <Link to="/" className={styles.homeLink}>Home</Link>
-        <Link to="/AboutMe" className={styles.aboutMeLink}>About Me</Link>
+        {/* <Link to="/AboutMe" className={styles.aboutMeLink}>About Me</Link> */}
         <Link to="/Projects" className={styles.projectsLink}>Projects</Link>
         <Link to="/Resume" className={styles.resumeLink}>Resume</Link>
+        <Link to="/Lifestyle" className={styles.lifestyleLink}>Lifestyle</Link>
         <Link to="/Contact" className={styles.contactLink}>Contact</Link>
       </div>
       <div className={styles.iconContainer}>

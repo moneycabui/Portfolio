@@ -4,6 +4,7 @@ import Modal from '../Modal'
 import Footer from '../Footer';
 import AboutMe from '../AboutMe';
 import Projects from '../Projects';
+import Lifestyle from '../Lifestyle';
 import Contact from '../Contact';
 import Home from '../Home';
 import Resume from '../Resume';
@@ -63,15 +64,16 @@ class App extends React.Component {
                   openModal={this.openModal}
                 />
               </Route>
-              <Route path="/AboutMe" component={AboutMe} exact/>
+              {/* <Route path="/AboutMe" component={AboutMe} exact/> */}
               <Route path="/Projects" exact>
                 <Projects
                   openModal={this.openModal}
                 />
               </Route>
               {/* <Route path="/Projects" component={Projects} exact/> */}
-              <Route path="/Contact" component={Contact} exact/>
               <Route path="/Resume" component={Resume} exact/>
+              <Route path="/Lifestyle" component={Lifestyle} exact/>
+              <Route path="/Contact" component={Contact} exact/>
               <Route path="*" render={() => (<div>Page does not exist.</div>)} />
             </Switch>
             {/* </HashRouter> */}
