@@ -11,7 +11,7 @@ class Lifestyle extends React.Component {
 
   render () {
     return (
-      <div>This is the Lifestyle component.</div>
+      <div className={styles.lifestyle}>This is the Lifestyle component.</div>
     );
   }
 }
